@@ -11,6 +11,11 @@
 <body>
 
 <!-- ── Score ──────────────────────────────────────────────────────────────── -->
+<div class="top-score-box">
+  <span class="top-score-label">TOP SCORE</span>
+  <span class="top-score-value" id="topScore">0</span>
+</div>
+
 <div class="score-box">
   <span class="score-label">SCORE</span>
   <span class="score-value" id="score">{{ score }}</span>
@@ -70,6 +75,7 @@
     <h2 class="overlay-title">GAME OVER</h2>
     <p class="overlay-msg">Your score</p>
     <p class="overlay-score" id="overlayScore"></p>
+    <button class="btn btn-share" id="shareBtn" onclick="shareScore()">Share</button>
     <button class="btn btn-play-again" onclick="location.reload()">Play Again</button>
   </div>
 </div>
@@ -82,7 +88,28 @@
   let leftId  = {{ left.id }};
   let rightId = {{ right.id }};
   let score   = {{ score }};
+  let topScore = 0;
   let busy    = false;
+  const TOP_SCORE_KEY = 'epsteinTopScore';
+
+  function initTopScore() {
+    try {
+      const stored = parseInt(localStorage.getItem(TOP_SCORE_KEY) || '0', 10);
+      topScore = Number.isFinite(stored) ? stored : 0;
+    } catch (_) {
+      topScore = 0;
+    }
+    document.getElementById('topScore').textContent = topScore;
+  }
+
+  function updateTopScore(candidate) {
+    if (candidate <= topScore) return;
+    topScore = candidate;
+    document.getElementById('topScore').textContent = topScore;
+    try {
+      localStorage.setItem(TOP_SCORE_KEY, String(topScore));
+    } catch (_) {}
+  }
 
   function guess(direction) {
     if (busy) return;
@@ -111,6 +138,7 @@
         scoreEl.classList.remove('score-bump');
         scoreEl.getBoundingClientRect();
         scoreEl.classList.add('score-bump');
+        updateTopScore(score);
 
         if (data.game_over) {
           setTimeout(() => showOverlay(score), 1600);
@@ -145,15 +173,15 @@
     }, 1100);
   }
 
-  function makeBgPanel(url, contentEl) {
+  function makeBgPanel(url, contentEl, vertical) {
     const panel = document.createElement('div');
     panel.style.cssText =
-      'position:relative;flex:0 0 33.333%;overflow:hidden;' +
+      `position:relative;flex:0 0 33.333%;overflow:hidden;${vertical ? 'width:100%;' : 'height:100%;'}` +
       'display:flex;align-items:center;justify-content:center;';
     const bg = document.createElement('div');
     bg.style.cssText =
       'position:absolute;inset:0;background-size:cover;background-position:center top;' +
-      'filter:blur(1px) brightness(.45) saturate(.6);' +
+      'filter:blur(1px) brightness(.58) saturate(.72);' +
       `background-image:url('${url}');`;
     const ov = document.createElement('div');
     ov.style.cssText =
@@ -184,26 +212,29 @@
     const gameWrap = document.getElementById('gameWrap');
     const bgLeft  = document.getElementById('bgLeft');
     const bgRight = document.getElementById('bgRight');
+    const isMobile = window.matchMedia('(max-width: 640px)').matches;
 
     // Extract raw URL from a backgroundImage style value
     const getUrl = el => el.style.backgroundImage.replace(/^url\(["']?|["']?\)$/g, '');
 
     // 3-panel strip: [old-left | old-right | new-right]
-    // Slides left by one card width (= 33.333% of strip width)
+    // Desktop: slides left by one panel. Mobile: slides up by one panel.
     const strip = document.createElement('div');
-    strip.style.cssText =
-      'position:absolute;top:0;bottom:0;left:0;width:150%;z-index:20;display:flex;' +
-      'transition:transform .5s cubic-bezier(0.4,0,0.2,1);';
+    strip.style.cssText = isMobile
+      ? 'position:absolute;top:0;left:0;right:0;height:150%;z-index:20;display:flex;flex-direction:column;pointer-events:none;' +
+        'transition:transform .5s cubic-bezier(0.4,0,0.2,1);'
+      : 'position:absolute;top:0;bottom:0;left:0;width:150%;z-index:20;display:flex;pointer-events:none;' +
+        'transition:transform .5s cubic-bezier(0.4,0,0.2,1);';
     strip.appendChild(makeBgPanel(getUrl(bgLeft),
-      document.querySelector('#cardLeft .card-content').cloneNode(true)));
+      document.querySelector('#cardLeft .card-content').cloneNode(true), isMobile));
     strip.appendChild(makeBgPanel(getUrl(bgRight),
-      document.querySelector('#cardRight .card-content').cloneNode(true)));
+      document.querySelector('#cardRight .card-content').cloneNode(true), isMobile));
     strip.appendChild(makeBgPanel(data.new_right.image_url,
-      makeNewRightContent(data.new_right.full_name)));
+      makeNewRightContent(data.new_right.full_name), isMobile));
 
     gameWrap.appendChild(strip);
     strip.getBoundingClientRect(); // force reflow
-    strip.style.transform = 'translateX(-33.333%)';
+    strip.style.transform = isMobile ? 'translateY(-33.333%)' : 'translateX(-33.333%)';
 
     // Update real card content and bgs immediately — strip covers them
     document.getElementById('nameLeft').textContent  = data.new_left.full_name;
@@ -244,9 +275,40 @@
   }
 
   function showOverlay(finalScore) {
+    updateTopScore(finalScore);
     document.getElementById('overlayScore').textContent = finalScore;
     document.getElementById('overlay').classList.remove('hidden');
   }
+
+  async function shareScore() {
+    const finalScore = parseInt(document.getElementById('overlayScore').textContent || String(score), 10) || 0;
+    const text = `I scored ${finalScore} in Higher or Lower: Epstein Files.`;
+    const url = `${window.location.origin}/`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Higher or Lower — Epstein Files',
+          text,
+          url,
+        });
+        return;
+      } catch (_) {}
+    }
+
+    const fallback = `${text} ${url}`;
+    try {
+      await navigator.clipboard.writeText(fallback);
+      const btn = document.getElementById('shareBtn');
+      if (btn) {
+        const old = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = old; }, 1200);
+      }
+    } catch (_) {}
+  }
+
+  initTopScore();
 </script>
 </body>
 </html>

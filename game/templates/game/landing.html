@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epstein Files</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'game/css/landing.css' %}" />
+  <link rel="icon" type="image/png" href="{% static 'game/favicon.png' %}" />
+</head>
+<body>
+  <main class="landing-shell">
+    <div class="redacted-wall" aria-hidden="true">
+      <div class="photo-card p1"><span></span><span></span><span></span></div>
+      <div class="photo-card p2"><span></span><span></span></div>
+      <div class="photo-card p3"><span></span><span></span><span></span></div>
+      <div class="photo-card p4"><span></span><span></span></div>
+      <div class="photo-card p5"><span></span><span></span><span></span></div>
+      <div class="photo-card p6"><span></span><span></span></div>
+    </div>
+
+    <section class="center-stage">
+      <a class="folder-link" href="{% url 'game' %}" aria-label="Click to play">
+        <div class="folder-tab"></div>
+        <div class="folder-body">
+          <span class="folder-label">EPSTEIN FILES</span>
+          <span class="folder-cta">Click to play</span>
+        </div>
+      </a>
+    </section>
+  </main>
+</body>
+</html>

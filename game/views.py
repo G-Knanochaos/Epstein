@@ -7,6 +7,11 @@ from .models import Celebrity
 MAX_SEEN = 15
 
 
+def landing(request):
+    """Landing page with file-icon start CTA."""
+    return render(request, 'game/landing.html')
+
+
 def _pick_fresh(exclude_ids):
     """Return one Celebrity not in exclude_ids (falls back to full pool if needed)."""
     pool = list(Celebrity.objects.exclude(id__in=exclude_ids).values_list('id', flat=True))

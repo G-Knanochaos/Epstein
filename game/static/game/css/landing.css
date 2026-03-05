@@ -1,0 +1,174 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --paper: #ffe16b;
+  --paper-dark: #e6c54b;
+  --ink: #171717;
+  --bg: #0f0f1a;
+  --accent: #f2ca2f;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(circle at 20% 20%, #2f3656 0%, #222942 45%, #1a2136 100%);
+  color: #fff;
+}
+
+.landing-shell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.redacted-wall {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  filter: contrast(1.05) saturate(0.8);
+}
+
+.redacted-wall::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background-image: url("../favicon.png");
+  background-size: 140px 140px;
+  background-repeat: repeat;
+  opacity: 0.24;
+  transform: rotate(-7deg) scale(1.15);
+}
+
+.redacted-wall::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.42));
+}
+
+.photo-card {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    linear-gradient(120deg, rgba(96, 118, 168, 0.9), rgba(42, 54, 84, 0.94)),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 2px, rgba(0, 0, 0, 0.05) 3px, rgba(0, 0, 0, 0.05) 5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.36);
+  transform: rotate(var(--rot));
+}
+
+.photo-card span {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  height: 11px;
+  background: rgba(7, 7, 7, 0.78);
+  border-radius: 2px;
+}
+
+.photo-card span:nth-child(1) { top: 22%; }
+.photo-card span:nth-child(2) { top: 44%; }
+.photo-card span:nth-child(3) { top: 66%; }
+
+.p1 { --rot: -5deg; width: 320px; height: 225px; left: -30px;  top: 10%; }
+.p2 { --rot: 8deg;  width: 290px; height: 210px; left: 18%;    top: 1%; }
+.p3 { --rot: -3deg; width: 335px; height: 240px; left: 53%;    top: 5%; }
+.p4 { --rot: 6deg;  width: 300px; height: 215px; left: 77%;    top: 22%; }
+.p5 { --rot: -7deg; width: 315px; height: 220px; left: 12%;    top: 58%; }
+.p6 { --rot: 4deg;  width: 350px; height: 250px; left: 56%;    top: 54%; }
+
+.center-stage {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.folder-link {
+  position: relative;
+  width: min(40vw, 420px);
+  min-width: 250px;
+  display: block;
+  text-decoration: none;
+  transform: translateY(4px);
+  transition: transform 0.16s ease, filter 0.16s ease;
+  filter: drop-shadow(0 16px 35px rgba(0, 0, 0, 0.5));
+}
+
+.folder-link:hover,
+.folder-link:focus-visible {
+  transform: translateY(-3px) scale(1.03);
+  filter: drop-shadow(0 22px 40px rgba(0, 0, 0, 0.58));
+}
+
+.folder-tab {
+  width: 42%;
+  height: 34px;
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(to bottom, #f8da67, #efcb4d);
+  border: 2px solid rgba(0, 0, 0, 0.45);
+  border-bottom: 0;
+  margin-left: 12%;
+}
+
+.folder-body {
+  height: 190px;
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.45);
+  background:
+    linear-gradient(to bottom, #ffe475 0%, #f7d658 55%, #e8c341 100%);
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.folder-label {
+  display: inline-block;
+  background: #efe8bd;
+  color: var(--ink);
+  border: 2px solid #938956;
+  padding: 10px 18px;
+  font-family: "Courier New", Consolas, monospace;
+  font-size: clamp(1rem, 2.6vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.folder-cta {
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(23, 23, 23, 0.85);
+}
+
+@media (max-width: 860px) {
+}
+
+@media (max-width: 640px) {
+  .folder-link {
+    width: 72vw;
+    min-width: 220px;
+  }
+
+  .folder-body {
+    height: 160px;
+  }
+
+  .p2, .p4, .p6 {
+    display: none;
+  }
+
+  .p1, .p3, .p5 {
+    opacity: 0.72;
+  }
+}
