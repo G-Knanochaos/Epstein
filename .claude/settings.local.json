@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.justice.gov)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:brigettehyacinth.com)",
+      "WebFetch(domain:en.m.wikipedia.org)",
+      "WebFetch(domain:www.higherlowergame.com)",
+      "Bash(pip show django)",
+      "Bash(django-admin startproject epstein_game .)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:8000/)"
+    ]
+  }
+}

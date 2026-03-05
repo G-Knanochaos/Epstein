@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Higher or Lower — Epstein Edition</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'game/css/style.css' %}" />
+  <link rel="icon" type="image/png" href="{% static 'game/favicon.png' %}" />
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="header-inner">
+    <span class="site-title">Higher or Lower</span>
+    <span class="site-subtitle">Epstein Documents Edition</span>
+  </div>
+  <div class="score-box">
+    <span class="score-label">SCORE</span>
+    <span class="score-value" id="score">{{ score }}</span>
+  </div>
+</header>
+
+<!-- ── Game area ───────────────────────────────────────────────────────────── -->
+<main class="game-wrap" id="gameWrap">
+
+  <!-- LEFT card (already revealed) -->
+  <div class="card card-left" id="cardLeft">
+    <div class="card-bg" id="bgLeft"
+         style="background-image: url('{{ left.image_url }}')"></div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <div class="name-row">
+        <h2 class="card-name" id="nameLeft">{{ left.full_name }}</h2>
+        <button class="info-btn" onclick="toggleBio('descLeft', this)" aria-label="Show info">ⓘ</button>
+      </div>
+      <p class="card-bio hidden" id="descLeft">{{ left.description }}</p>
+      <p class="card-label">has</p>
+      <p class="card-count" id="countLeft">{{ left.epstein_mentions }}</p>
+      <p class="card-unit">Epstein document mentions</p>
+    </div>
+  </div>
+
+  <!-- VS divider -->
+  <div class="vs-circle">VS</div>
+
+  <!-- RIGHT card (to be guessed) -->
+  <div class="card card-right" id="cardRight">
+    <div class="card-bg" id="bgRight"
+         style="background-image: url('{{ right.image_url }}')"></div>
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <div class="name-row">
+        <h2 class="card-name" id="nameRight">{{ right.full_name }}</h2>
+        <button class="info-btn" onclick="toggleBio('descRight', this)" aria-label="Show info">ⓘ</button>
+      </div>
+      <p class="card-bio hidden" id="descRight">{{ right.description }}</p>
+      <p class="card-label">has</p>
+      <div class="count-row" id="countRowRight">
+        <p class="card-count hidden" id="countRight"></p>
+        <div class="btn-group" id="btnGroup">
+          <button class="btn btn-higher" onclick="guess('higher')">▲ Higher</button>
+          <button class="btn btn-lower"  onclick="guess('lower')">▼ Lower</button>
+        </div>
+      </div>
+      <p class="card-unit">Epstein document mentions</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── Game Over overlay ───────────────────────────────────────────────────── -->
+<div class="overlay hidden" id="overlay">
+  <div class="overlay-box">
+    <h2 class="overlay-title">GAME OVER</h2>
+    <p class="overlay-msg">Your score</p>
+    <p class="overlay-score" id="overlayScore"></p>
+    <button class="btn btn-play-again" onclick="location.reload()">Play Again</button>
+  </div>
+</div>
+
+<!-- ── Result flash ────────────────────────────────────────────────────────── -->
+<div class="result-flash hidden" id="resultFlash"></div>
+
+<script>
+  const CSRF = '{{ csrf_token }}';
+  let leftId  = {{ left.id }};
+  let rightId = {{ right.id }};
+  let score   = {{ score }};
+  let busy    = false;
+
+  function guess(direction) {
+    if (busy) return;
+    busy = true;
+
+    document.getElementById('btnGroup').classList.add('hidden');
+
+    const fd = new FormData();
+    fd.append('left_id', leftId);
+    fd.append('right_id', rightId);
+    fd.append('guess', direction);
+    fd.append('score', score);
+    fd.append('csrfmiddlewaretoken', CSRF);
+
+    fetch('/check/', { method: 'POST', body: fd })
+      .then(r => r.json())
+      .then(data => {
+        const countEl = document.getElementById('countRight');
+        countEl.classList.remove('hidden');
+        countUp(countEl, data.right_mentions, 1000);
+
+        showFlash(data.correct);
+        score = data.score;
+        document.getElementById('score').textContent = score;
+
+        if (data.game_over) {
+          setTimeout(() => showOverlay(score), 1600);
+          return;
+        }
+
+        setTimeout(() => advance(data), 1600);
+      });
+  }
+
+  function countUp(el, target, duration) {
+    const startTime = performance.now();
+    function tick(now) {
+      const t = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 3); // ease-out cubic
+      el.textContent = Math.round(eased * target);
+      if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  function showFlash(correct) {
+    const el = document.getElementById('resultFlash');
+    el.textContent = correct ? '✓ Correct!' : '✗ Wrong!';
+    el.className = 'result-flash ' + (correct ? 'flash-correct' : 'flash-wrong');
+    setTimeout(() => el.classList.add('hidden'), 1200);
+  }
+
+  function advance(data) {
+    const gameWrap = document.getElementById('gameWrap');
+
+    // Phase 1: slide the whole game area out to the left as one unit
+    gameWrap.style.transition = 'transform .4s ease';
+    gameWrap.style.transform  = 'translateX(-100%)';
+
+    setTimeout(() => {
+      // Update everything while off-screen
+      document.getElementById('nameLeft').textContent  = data.new_left.full_name;
+      document.getElementById('descLeft').textContent  = data.new_left.description;
+      document.getElementById('countLeft').textContent = data.new_left.epstein_mentions;
+      document.getElementById('nameRight').textContent  = data.new_right.full_name;
+      document.getElementById('descRight').textContent  = data.new_right.description;
+      hideBio('descLeft');
+      hideBio('descRight');
+      const countEl = document.getElementById('countRight');
+      countEl.textContent = '';
+      countEl.classList.add('hidden');
+      document.getElementById('btnGroup').classList.remove('hidden');
+      document.getElementById('bgLeft').style.backgroundImage  = `url('${data.new_left.image_url}')`;
+      document.getElementById('bgRight').style.backgroundImage = `url('${data.new_right.image_url}')`;
+      leftId  = data.new_left.id;
+      rightId = data.new_right.id;
+
+      // Snap to right, then slide in
+      gameWrap.style.transition = 'none';
+      gameWrap.style.transform  = 'translateX(100%)';
+      gameWrap.getBoundingClientRect(); // force reflow
+
+      gameWrap.style.transition = 'transform .4s ease';
+      gameWrap.style.transform  = 'translateX(0)';
+
+      setTimeout(() => {
+        gameWrap.style.transition = '';
+        gameWrap.style.transform  = '';
+        busy = false;
+      }, 420);
+    }, 420);
+  }
+
+  function toggleBio(id, btn) {
+    const el = document.getElementById(id);
+    const isHidden = el.classList.toggle('hidden');
+    btn.classList.toggle('info-btn-active', !isHidden);
+  }
+
+  function hideBio(id) {
+    document.getElementById(id).classList.add('hidden');
+    // reset sibling info button
+    const btn = document.querySelector(`[onclick="toggleBio('${id}', this)"]`);
+    if (btn) btn.classList.remove('info-btn-active');
+  }
+
+  function showOverlay(finalScore) {
+    document.getElementById('overlayScore').textContent = finalScore;
+    document.getElementById('overlay').classList.remove('hidden');
+  }
+</script>
+</body>
+</html>

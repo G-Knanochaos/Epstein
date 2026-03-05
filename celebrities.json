@@ -1,0 +1,642 @@
+[
+  {
+    "full_name": "Bill Gates",
+    "doj_query": "Bill Gates",
+    "wikipedia_slug": "Bill_Gates",
+    "epstein_mentions": 2637,
+    "description": "William Henry Gates III is an American businessman and philanthropist. A pioneer of the microcomputer revolution of the 1970s and 1980s, he co-founded the software company Microsoft in 1975 with his childhood friend Paul Allen. Following Microsoft's initial public offering in 1986 and the subsequent increase in its stock price, Gates became the world's then-youngest billionaire in 1987, at age 31.",
+    "extract": "William Henry Gates III is an American businessman and philanthropist. A pioneer of the microcomputer revolution of the 1970s and 1980s, he co-founded the software company Microsoft in 1975 with his childhood friend Paul Allen. Following Microsoft's initial public offering in 1986 and the subsequent increase in its stock price, Gates became the world's then-youngest billionaire in 1987, at age 31. Forbes magazine ranked him as the world's wealthiest person for 18 out of 24 years between 1995 and 2017, including 13 years consecutively from 1995 to 2007. Gates became the first centibillionaire in 1999, when his net worth briefly surpassed US$100 billion. According to Forbes, as of February 2026, his net worth stood at US$107.7 billion, making him the 18th-wealthiest individual in the world.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bill_Gates_at_the_European_Commission_-_2025_-_P067383-987995_%28cropped%29.jpg/330px-Bill_Gates_at_the_European_Commission_-_2025_-_P067383-987995_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bill_Gates"
+  },
+  {
+    "full_name": "Elon Musk",
+    "doj_query": "Elon Musk",
+    "wikipedia_slug": "Elon_Musk",
+    "epstein_mentions": 1122,
+    "description": "Elon Reeve Musk is a businessman and entrepreneur known for his leadership of Tesla, SpaceX, X, and xAI. Musk has been the wealthiest person in the world since 2025; as of February 2026, Forbes estimates his net worth to be around US$852 billion.",
+    "extract": "Elon Reeve Musk is a businessman and entrepreneur known for his leadership of Tesla, SpaceX, X, and xAI. Musk has been the wealthiest person in the world since 2025; as of February 2026, Forbes estimates his net worth to be around US$852 billion.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Elon_Musk_-_54820081119_%28cropped%29.jpg/330px-Elon_Musk_-_54820081119_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Elon_Musk"
+  },
+  {
+    "full_name": "Barack Obama",
+    "doj_query": "Barack Obama",
+    "wikipedia_slug": "Barack_Obama",
+    "epstein_mentions": 759,
+    "description": "Barack Hussein Obama II is an American politician who served as the 44th president of the United States from 2009 to 2017. A member of the Democratic Party, he was the first African American president. Obama previously served as a U.S. senator representing Illinois from 2005 to 2008 and as an Illinois state senator from 1997 to 2004.",
+    "extract": "Barack Hussein Obama II is an American politician who served as the 44th president of the United States from 2009 to 2017. A member of the Democratic Party, he was the first African American president. Obama previously served as a U.S. senator representing Illinois from 2005 to 2008 and as an Illinois state senator from 1997 to 2004.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/330px-President_Barack_Obama.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Barack_Obama"
+  },
+  {
+    "full_name": "Donald Trump",
+    "doj_query": "Donald Trump",
+    "wikipedia_slug": "Donald_Trump",
+    "epstein_mentions": 1811,
+    "description": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+    "extract": "Donald John Trump is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/330px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Donald_Trump"
+  },
+  {
+    "full_name": "Joe Biden",
+    "doj_query": "Joe Biden",
+    "wikipedia_slug": "Joe_Biden",
+    "epstein_mentions": 377,
+    "description": "Joseph Robinette Biden Jr. is an American politician who was the 46th president of the United States from 2021 to 2025. A member of the Democratic Party, he represented Delaware in the United States Senate from 1973 to 2009 and also served as the 47th vice president under President Barack Obama from 2009 to 2017.",
+    "extract": "Joseph Robinette Biden Jr. is an American politician who was the 46th president of the United States from 2021 to 2025. A member of the Democratic Party, he represented Delaware in the United States Senate from 1973 to 2009 and also served as the 47th vice president under President Barack Obama from 2009 to 2017.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/330px-Joe_Biden_presidential_portrait.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Joe_Biden"
+  },
+  {
+    "full_name": "Justin Trudeau",
+    "doj_query": "Trudeau",
+    "wikipedia_slug": "Justin_Trudeau",
+    "epstein_mentions": 92,
+    "description": "Justin Pierre James Trudeau is a Canadian politician who served as the 23rd prime minister of Canada from 2015 to 2025. He led the Liberal Party from 2013 until his resignation in 2025 and was the member of Parliament (MP) for Papineau from 2008 until 2025.",
+    "extract": "Justin Pierre James Trudeau is a Canadian politician who served as the 23rd prime minister of Canada from 2015 to 2025. He led the Liberal Party from 2013 until his resignation in 2025 and was the member of Parliament (MP) for Papineau from 2008 until 2025.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Prime_Minister_Trudeau%27s_message_on_Christmas_2023_%280m29s%29_%28cropped%29.jpg/330px-Prime_Minister_Trudeau%27s_message_on_Christmas_2023_%280m29s%29_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Justin_Trudeau"
+  },
+  {
+    "full_name": "Narendra Modi",
+    "doj_query": "Modi",
+    "wikipedia_slug": "Narendra_Modi",
+    "epstein_mentions": 136,
+    "description": "Narendra Damodardas Modi is an Indian politician who has served as the prime minister of India since 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the member of parliament (MP) for Varanasi. He is a member of the Bharatiya Janata Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a right-wing Hindutva paramilitary volunteer organisation. He is the longest-serving prime minister outside the Indian National Congress.",
+    "extract": "Narendra Damodardas Modi is an Indian politician who has served as the prime minister of India since 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the member of parliament (MP) for Varanasi. He is a member of the Bharatiya Janata Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a right-wing Hindutva paramilitary volunteer organisation. He is the longest-serving prime minister outside the Indian National Congress.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/The_official_portrait_of_Shri_Narendra_Modi%2C_the_Prime_Minister_of_the_Republic_of_India.jpg/330px-The_official_portrait_of_Shri_Narendra_Modi%2C_the_Prime_Minister_of_the_Republic_of_India.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Narendra_Modi"
+  },
+  {
+    "full_name": "Richard Branson",
+    "doj_query": "Richard Branson",
+    "wikipedia_slug": "Richard_Branson",
+    "epstein_mentions": 692,
+    "description": "Sir Richard Charles Nicholas Branson is an English business magnate who co-founded the Virgin Group in 1970, and, as of 2016, controlled five companies.",
+    "extract": "Sir Richard Charles Nicholas Branson is an English business magnate who co-founded the Virgin Group in 1970, and, as of 2016, controlled five companies.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Richard_Branson_Addresses_the_Our_Ocean_Conference_2015_in_Valpara%C3%ADso_%2821783214958%29_%28cropped%29.jpg/330px-Richard_Branson_Addresses_the_Our_Ocean_Conference_2015_in_Valpara%C3%ADso_%2821783214958%29_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Richard_Branson"
+  },
+  {
+    "full_name": "Mark Cuban",
+    "doj_query": "Mark Cuban",
+    "wikipedia_slug": "Mark_Cuban",
+    "epstein_mentions": 27,
+    "description": "Mark Cuban is an American businessman and television personality. He is the former principal owner and current minority owner of the Dallas Mavericks of the National Basketball Association (NBA) and co-owner of 2929 Entertainment. From 2012 to 2025, he was also one of the main \"sharks\" on the ABC reality television series Shark Tank. As of January 2026, Forbes has estimated his net worth to be US$6 billion.",
+    "extract": "Mark Cuban is an American businessman and television personality. He is the former principal owner and current minority owner of the Dallas Mavericks of the National Basketball Association (NBA) and co-owner of 2929 Entertainment. From 2012 to 2025, he was also one of the main \"sharks\" on the ABC reality television series Shark Tank. As of January 2026, Forbes has estimated his net worth to be US$6 billion.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/MarkCuban2023.jpg/330px-MarkCuban2023.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mark_Cuban"
+  },
+  {
+    "full_name": "Jeff Bezos",
+    "doj_query": "Jeff Bezos",
+    "wikipedia_slug": "Jeff_Bezos",
+    "epstein_mentions": 199,
+    "description": "Jeffrey Preston Bezos is an American businessman best known as the founder, executive chairman, and former president and CEO of Amazon, the world's largest e-commerce and cloud computing company. According to Forbes, as of December 2025, Bezos's estimated net worth is US$239.4 billion, making him the fourth richest person in the world. He was the wealthiest person from 2017 to 2021, according to Forbes and the Bloomberg Billionaires Index.",
+    "extract": "Jeffrey Preston Bezos is an American businessman best known as the founder, executive chairman, and former president and CEO of Amazon, the world's largest e-commerce and cloud computing company. According to Forbes, as of December 2025, Bezos's estimated net worth is US$239.4 billion, making him the fourth richest person in the world. He was the wealthiest person from 2017 to 2021, according to Forbes and the Bloomberg Billionaires Index.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg/330px-Jeff_Bezos_visits_LAAFB_SMC_%283908618%29_%28cropped%29.jpeg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jeff_Bezos"
+  },
+  {
+    "full_name": "Warren Buffett",
+    "doj_query": "Buffett",
+    "wikipedia_slug": "Warren_Buffett",
+    "epstein_mentions": 273,
+    "description": "Warren Edward Buffett is an American investor and philanthropist who is the chairman and former CEO of the conglomerate Berkshire Hathaway. As a result of his success, Buffett is one of the best-known investors in the world. According to Forbes, as of January 2026, Buffett's estimated net worth stood at US$148.9 billion, making him the ninth-richest person in the world.",
+    "extract": "Warren Edward Buffett is an American investor and philanthropist who is the chairman and former CEO of the conglomerate Berkshire Hathaway. As a result of his success, Buffett is one of the best-known investors in the world. According to Forbes, as of January 2026, Buffett's estimated net worth stood at US$148.9 billion, making him the ninth-richest person in the world.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg/330px-Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Warren_Buffett"
+  },
+  {
+    "full_name": "Rupert Murdoch",
+    "doj_query": "Rupert Murdoch",
+    "wikipedia_slug": "Rupert_Murdoch",
+    "epstein_mentions": 81,
+    "description": "Keith Rupert Murdoch is an Australian and American former business magnate, investor, and media mogul. Through his company News Corp, he is the owner of hundreds of local, national, and international publishing outlets around the world, including in the United Kingdom, in Australia, in the United States, book publisher HarperCollins, and the television broadcasting channels Sky News Australia and Fox News. He was also the owner of Sky, 21st Century Fox, and the now-defunct News of the World.",
+    "extract": "Keith Rupert Murdoch is an Australian and American former business magnate, investor, and media mogul. Through his company News Corp, he is the owner of hundreds of local, national, and international publishing outlets around the world, including in the United Kingdom, in Australia, in the United States, book publisher HarperCollins, and the television broadcasting channels Sky News Australia and Fox News. He was also the owner of Sky, 21st Century Fox, and the now-defunct News of the World. With a net worth of US$21.7 billion as of 2 March 2022, Murdoch is the 31st richest person in the United States and the 71st richest in the world according to Forbes magazine. Due to his extensive wealth and influence over media and politics, Murdoch has been described as an oligarch.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Rupert_Murdoch_-_Flickr_-_Eva_Rinaldi_Celebrity_and_Live_Music_Photographer.jpg/330px-Rupert_Murdoch_-_Flickr_-_Eva_Rinaldi_Celebrity_and_Live_Music_Photographer.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rupert_Murdoch"
+  },
+  {
+    "full_name": "Oprah Winfrey",
+    "doj_query": "Oprah",
+    "wikipedia_slug": "Oprah_Winfrey",
+    "epstein_mentions": 158,
+    "description": "Oprah Gail Winfrey is an American talk show host, television producer, actress, author, and media proprietor. She is best known for her talk show, The Oprah Winfrey Show, broadcast from Chicago, which ran in national syndication for 25 years, from 1986 to 2011. Globally, she is the richest Black woman and the wealthiest female celebrity. Dubbed the \"Queen of All Media\", she was the richest African-American of the 20th century and was once the world's only Black billionaire.",
+    "extract": "Oprah Gail Winfrey is an American talk show host, television producer, actress, author, and media proprietor. She is best known for her talk show, The Oprah Winfrey Show, broadcast from Chicago, which ran in national syndication for 25 years, from 1986 to 2011. Globally, she is the richest Black woman and the wealthiest female celebrity. Dubbed the \"Queen of All Media\", she was the richest African-American of the 20th century and was once the world's only Black billionaire. By 2007, she was often ranked as the most influential woman in the world.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Oprah_Winfrey_2016.jpg/330px-Oprah_Winfrey_2016.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Oprah_Winfrey"
+  },
+  {
+    "full_name": "Ellen DeGeneres",
+    "doj_query": "DeGeneres",
+    "wikipedia_slug": "Ellen_DeGeneres",
+    "epstein_mentions": 19,
+    "description": "Ellen Lee DeGeneres is an American retired comedian, actress, television host, writer, and producer. She began her career in stand-up comedy in the early 1980s, gaining national attention with a 1986 appearance on The Tonight Show Starring Johnny Carson. She starred in the television sitcoms Ellen (1994–1998) and The Ellen Show (2001–2002). She also hosted the syndicated television talk show, The Ellen DeGeneres Show (2003–2022), for which she received 33 Daytime Emmy Awards.",
+    "extract": "Ellen Lee DeGeneres is an American retired comedian, actress, television host, writer, and producer. She began her career in stand-up comedy in the early 1980s, gaining national attention with a 1986 appearance on The Tonight Show Starring Johnny Carson. She starred in the television sitcoms Ellen (1994–1998) and The Ellen Show (2001–2002). She also hosted the syndicated television talk show, The Ellen DeGeneres Show (2003–2022), for which she received 33 Daytime Emmy Awards. In 2021, DeGeneres announced the end of The Ellen DeGeneres Show, following multiple allegations of workplace bullying. The controversy led to internal investigations and a sharp decline in public support, culminating in her decision to retire from the talk show in 2022.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ellen_DeGeneres-2009-enh5.jpg/330px-Ellen_DeGeneres-2009-enh5.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ellen_DeGeneres"
+  },
+  {
+    "full_name": "Jimmy Fallon",
+    "doj_query": "Jimmy Fallon",
+    "wikipedia_slug": "Jimmy_Fallon",
+    "epstein_mentions": 50,
+    "description": "James Thomas Fallon is an American comedian, television host, actor, singer, writer, and producer, best known for his work in television.",
+    "extract": "James Thomas Fallon is an American comedian, television host, actor, singer, writer, and producer, best known for his work in television.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Jimmy_Fallon%2C_Montclair_Film_Festival%2C_2013.jpg/330px-Jimmy_Fallon%2C_Montclair_Film_Festival%2C_2013.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jimmy_Fallon"
+  },
+  {
+    "full_name": "Beyonce",
+    "doj_query": "Beyonce",
+    "wikipedia_slug": "Beyonce",
+    "epstein_mentions": 116,
+    "description": "Beyoncé Giselle Knowles-Carter is an American singer, songwriter, actress, performer, and businesswoman. Known for her vocal ability, artistic reinventions, and live performances, she is widely regarded as one of the most culturally significant figures of the 21st century. Credited with shaping popular music, Beyoncé is often deemed one of the greatest entertainers of all time.",
+    "extract": "Beyoncé Giselle Knowles-Carter is an American singer, songwriter, actress, performer, and businesswoman. Known for her vocal ability, artistic reinventions, and live performances, she is widely regarded as one of the most culturally significant figures of the 21st century. Credited with shaping popular music, Beyoncé is often deemed one of the greatest entertainers of all time.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg/330px-Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Beyonc%C3%A9"
+  },
+  {
+    "full_name": "Taylor Swift",
+    "doj_query": "Taylor Swift",
+    "wikipedia_slug": "Taylor_Swift",
+    "epstein_mentions": 73,
+    "description": "Taylor Alison Swift is an American singer-songwriter. An influential figure in popular culture, she is known for her autobiographical songwriting and artistic reinventions. Swift is the highest-grossing live music artist, the wealthiest female musician, and one of the best-selling music artists of all time.",
+    "extract": "Taylor Alison Swift is an American singer-songwriter. An influential figure in popular culture, she is known for her autobiographical songwriting and artistic reinventions. Swift is the highest-grossing live music artist, the wealthiest female musician, and one of the best-selling music artists of all time.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png/330px-Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Taylor_Swift"
+  },
+  {
+    "full_name": "Rihanna",
+    "doj_query": "Rihanna",
+    "wikipedia_slug": "Rihanna",
+    "epstein_mentions": 42,
+    "description": "Robyn Rihanna Fenty is a Barbadian singer, businesswoman, and actress. An influential figure in popular culture, she is known for her multifaceted career, artistic reinventions, and eclectic fashion style. Regarded as a pop and fashion icon, Rihanna is one of the best-selling music artists of all time, with estimated sales of over 250 million records.",
+    "extract": "Robyn Rihanna Fenty is a Barbadian singer, businesswoman, and actress. An influential figure in popular culture, she is known for her multifaceted career, artistic reinventions, and eclectic fashion style. Regarded as a pop and fashion icon, Rihanna is one of the best-selling music artists of all time, with estimated sales of over 250 million records.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Rihanna_Fenty_2018.png/330px-Rihanna_Fenty_2018.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rihanna"
+  },
+  {
+    "full_name": "Justin Bieber",
+    "doj_query": "Justin Bieber",
+    "wikipedia_slug": "Justin_Bieber",
+    "epstein_mentions": 35,
+    "description": "Justin Drew Bieber is a Canadian singer. Regarded as a prominent figure in contemporary popular music, he rose to fame in the late 2000s with his debut extended play, My World (2009), receiving international recognition and establishing him as a teen idol.",
+    "extract": "Justin Drew Bieber is a Canadian singer. Regarded as a prominent figure in contemporary popular music, he rose to fame in the late 2000s with his debut extended play, My World (2009), receiving international recognition and establishing him as a teen idol.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Justin_Bieber_in_2015.jpg/330px-Justin_Bieber_in_2015.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Justin_Bieber"
+  },
+  {
+    "full_name": "Katy Perry",
+    "doj_query": "Katy Perry",
+    "wikipedia_slug": "Katy_Perry",
+    "epstein_mentions": 21,
+    "description": "Katheryn Elizabeth Hudson, known professionally as Katy Perry, is an American singer, songwriter, and television personality. She is one of the best-selling music artists in history, having sold over 151 million records worldwide. Known for her influence on pop music and her camp style, she has been dubbed the \"Queen of Camp\" by Vogue and Rolling Stone.",
+    "extract": "Katheryn Elizabeth Hudson, known professionally as Katy Perry, is an American singer, songwriter, and television personality. She is one of the best-selling music artists in history, having sold over 151 million records worldwide. Known for her influence on pop music and her camp style, she has been dubbed the \"Queen of Camp\" by Vogue and Rolling Stone.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/KatyPerryWestminst111224_%2881_of_95%29_%2854206733094%29_%28cropped_2%29.jpg/330px-KatyPerryWestminst111224_%2881_of_95%29_%2854206733094%29_%28cropped_2%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Katy_Perry"
+  },
+  {
+    "full_name": "Lady Gaga",
+    "doj_query": "Lady Gaga",
+    "wikipedia_slug": "Lady_Gaga",
+    "epstein_mentions": 65,
+    "description": "Stefani Joanne Angelina Germanotta, known professionally as Lady Gaga, is an American singer, songwriter, and actress. Known for her image reinventions and versatility across the entertainment industry, she is an influential figure in popular music. With estimated sales of 124 million records, she is one of the best-selling music artists of all time. Publications such as Billboard and Rolling Stone have ranked her among the greatest artists in history.",
+    "extract": "Stefani Joanne Angelina Germanotta, known professionally as Lady Gaga, is an American singer, songwriter, and actress. Known for her image reinventions and versatility across the entertainment industry, she is an influential figure in popular music. With estimated sales of 124 million records, she is one of the best-selling music artists of all time. Publications such as Billboard and Rolling Stone have ranked her among the greatest artists in history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lady_Gaga_at_Joe_Biden%27s_inauguration_%28cropped_5%29.jpg/330px-Lady_Gaga_at_Joe_Biden%27s_inauguration_%28cropped_5%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lady_Gaga"
+  },
+  {
+    "full_name": "Ariana Grande",
+    "doj_query": "Ariana Grande",
+    "wikipedia_slug": "Ariana_Grande",
+    "epstein_mentions": 11,
+    "description": "Ariana Grande-Butera is an American singer, songwriter, and actress. Known for her four-octave vocal range, which extends into the whistle register, she is regarded as an influential figure in popular music. Publications such as Rolling Stone and Billboard have deemed Grande one of the greatest artists in history, while Time included her on its list of the world's 100 most influential people in 2016 and 2019.",
+    "extract": "Ariana Grande-Butera is an American singer, songwriter, and actress. Known for her four-octave vocal range, which extends into the whistle register, she is regarded as an influential figure in popular music. Publications such as Rolling Stone and Billboard have deemed Grande one of the greatest artists in history, while Time included her on its list of the world's 100 most influential people in 2016 and 2019.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Ariana_Grande_promoting_Wicked_%282024%29.jpg/330px-Ariana_Grande_promoting_Wicked_%282024%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ariana_Grande"
+  },
+  {
+    "full_name": "Selena Gomez",
+    "doj_query": "Selena Gomez",
+    "wikipedia_slug": "Selena_Gomez",
+    "epstein_mentions": 21,
+    "description": "Selena Marie Gomez is an American actress, singer, and businesswoman. Gomez began her career as a child actress, appearing on the children's television series Barney & Friends (2002–2004), and emerged as a teen idol for her leading role as Alex Russo on the Disney Channel sitcom Wizards of Waverly Place (2007–2012).",
+    "extract": "Selena Marie Gomez is an American actress, singer, and businesswoman. Gomez began her career as a child actress, appearing on the children's television series Barney & Friends (2002–2004), and emerged as a teen idol for her leading role as Alex Russo on the Disney Channel sitcom Wizards of Waverly Place (2007–2012). She signed with Hollywood Records in 2008 and formed the band Selena Gomez & the Scene, which released three albums: Kiss & Tell (2009), A Year Without Rain (2010), and When the Sun Goes Down (2011).",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg/330px-Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Selena_Gomez"
+  },
+  {
+    "full_name": "Miley Cyrus",
+    "doj_query": "Miley Cyrus",
+    "wikipedia_slug": "Miley_Cyrus",
+    "epstein_mentions": 47,
+    "description": "Miley Ray Cyrus is an American singer, songwriter, and actress. An influential figure in popular music, Cyrus is known for her evolving artistry and image reinventions. She was an established child actress before developing a successful entertainment career as an adult. Cyrus emerged as a teen idol with her portrayal of Miley Stewart in the Disney Channel television series Hannah Montana (2006–2011), growing a profitable franchise and achieving two number-one soundtracks on the Billboard 200.",
+    "extract": "Miley Ray Cyrus is an American singer, songwriter, and actress. An influential figure in popular music, Cyrus is known for her evolving artistry and image reinventions. She was an established child actress before developing a successful entertainment career as an adult. Cyrus emerged as a teen idol with her portrayal of Miley Stewart in the Disney Channel television series Hannah Montana (2006–2011), growing a profitable franchise and achieving two number-one soundtracks on the Billboard 200.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Miley_Cyrus_Primavera19_-226_%2848986293772%29_%28cropped%29.jpg/330px-Miley_Cyrus_Primavera19_-226_%2848986293772%29_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Miley_Cyrus"
+  },
+  {
+    "full_name": "Demi Lovato",
+    "doj_query": "Demi Lovato",
+    "wikipedia_slug": "Demi_Lovato",
+    "epstein_mentions": 12,
+    "description": "Demetria Devonne \"Demi\"  Lovato is an American singer, songwriter, and actress. After appearing on the children's television series Barney & Friends (2002–2004), she starred in the Disney Channel short series As the Bell Rings (2007–2008). Lovato rose to prominence for playing Mitchie Torres in the musical television film Camp Rock (2008) and its sequel Camp Rock 2: The Final Jam (2010).",
+    "extract": "Demetria Devonne \"Demi\"  Lovato is an American singer, songwriter, and actress. After appearing on the children's television series Barney & Friends (2002–2004), she starred in the Disney Channel short series As the Bell Rings (2007–2008). Lovato rose to prominence for playing Mitchie Torres in the musical television film Camp Rock (2008) and its sequel Camp Rock 2: The Final Jam (2010). The former film's soundtrack featured \"This Is Me\", her debut single with Joe Jonas, peaking at number nine on the US Billboard Hot 100.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Demi_Lovato_Interview_Feb_2020.png/330px-Demi_Lovato_Interview_Feb_2020.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Demi_Lovato"
+  },
+  {
+    "full_name": "Britney Spears",
+    "doj_query": "Britney Spears",
+    "wikipedia_slug": "Britney_Spears",
+    "epstein_mentions": 43,
+    "description": "Britney Jean Spears is an American singer. Referred to as the \"Princess of Pop\", she is widely regarded as one of the most culturally significant figures of the 21st century. Spears's involvement in reviving the teen pop genre, as well as her energetic stage performances, brought great success.",
+    "extract": "Britney Jean Spears is an American singer. Referred to as the \"Princess of Pop\", she is widely regarded as one of the most culturally significant figures of the 21st century. Spears's involvement in reviving the teen pop genre, as well as her energetic stage performances, brought great success.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Britney_Spears_2013_%28Straighten_Crop%29.jpg/330px-Britney_Spears_2013_%28Straighten_Crop%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Britney_Spears"
+  },
+  {
+    "full_name": "Shakira",
+    "doj_query": "Shakira",
+    "wikipedia_slug": "Shakira",
+    "epstein_mentions": 16,
+    "description": "Shakira Isabel Mebarak Ripoll is a Colombian singer, songwriter, dancer, and record producer. Referred to as the \"Queen of Latin Music\", she has had a significant impact on the musical landscape of Latin America and has been credited with popularizing Hispanophone music globally, contributing to increased learning and use of the Spanish language worldwide. She is also credited with opening the doors of the international market for other Latin artists.",
+    "extract": "Shakira Isabel Mebarak Ripoll is a Colombian singer, songwriter, dancer, and record producer. Referred to as the \"Queen of Latin Music\", she has had a significant impact on the musical landscape of Latin America and has been credited with popularizing Hispanophone music globally, contributing to increased learning and use of the Spanish language worldwide. She is also credited with opening the doors of the international market for other Latin artists. Her accolades include 4 Grammy Awards and 15 Latin Grammy Awards.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2023-11-16_Gala_de_los_Latin_Grammy%2C_03_%28cropped%2902.jpg/330px-2023-11-16_Gala_de_los_Latin_Grammy%2C_03_%28cropped%2902.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Shakira"
+  },
+  {
+    "full_name": "Drake",
+    "doj_query": "Drake",
+    "wikipedia_slug": "Drake_(musician)",
+    "epstein_mentions": 190,
+    "description": "Aubrey Drake Graham is a Canadian rapper, singer, and actor. He is credited with popularizing R&B sensibilities in hip-hop music through rap-singing. Drake first gained recognition as Jimmy Brooks in the CTV teen drama series Degrassi: The Next Generation (2001–2008) and began his music career by independently releasing the mixtapes Room for Improvement (2006), Comeback Season (2007), and So Far Gone (2009) before signing with Young Money Entertainment.",
+    "extract": "Aubrey Drake Graham is a Canadian rapper, singer, and actor. He is credited with popularizing R&B sensibilities in hip-hop music through rap-singing. Drake first gained recognition as Jimmy Brooks in the CTV teen drama series Degrassi: The Next Generation (2001–2008) and began his music career by independently releasing the mixtapes Room for Improvement (2006), Comeback Season (2007), and So Far Gone (2009) before signing with Young Money Entertainment.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Drake_at_The_Carter_Effect_2017_%2836818935200%29_%28cropped%29.jpg/330px-Drake_at_The_Carter_Effect_2017_%2836818935200%29_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Drake_(musician)"
+  },
+  {
+    "full_name": "Chris Brown",
+    "doj_query": "Chris Brown",
+    "wikipedia_slug": "Chris_Brown",
+    "epstein_mentions": 6,
+    "description": "Christopher Maurice Brown is an American singer, songwriter, rapper, dancer, and actor. A hip-hop and pop-influenced R&B musician who works in a variety of genres, he has been called the \"King of R&B\" by some contemporaries. His lyrics often address emotional and hedonistic themes. His singing and dancing skills have often been compared favorably to those of Michael Jackson.",
+    "extract": "Christopher Maurice Brown is an American singer, songwriter, rapper, dancer, and actor. A hip-hop and pop-influenced R&B musician who works in a variety of genres, he has been called the \"King of R&B\" by some contemporaries. His lyrics often address emotional and hedonistic themes. His singing and dancing skills have often been compared favorably to those of Michael Jackson.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Chris_Brown_got_INFLUENCE.jpg/330px-Chris_Brown_got_INFLUENCE.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chris_Brown"
+  },
+  {
+    "full_name": "Billie Eilish",
+    "doj_query": "Billie Eilish",
+    "wikipedia_slug": "Billie_Eilish",
+    "epstein_mentions": 1,
+    "description": "Billie Eilish Pirate Baird O'Connell is an American singer-songwriter. Known for her distinctive musical sound and vocal style, Eilish is a prominent figure in 2020s pop culture. Eilish first gained public attention in 2015 with her debut single \"Ocean Eyes\" which was released on SoundCloud and written and produced by her brother Finneas O'Connell. In 2017, she released her debut EP, Don't Smile at Me, which was commercially successful in various countries, including the US, UK, and Australia.",
+    "extract": "Billie Eilish Pirate Baird O'Connell is an American singer-songwriter. Known for her distinctive musical sound and vocal style, Eilish is a prominent figure in 2020s pop culture. Eilish first gained public attention in 2015 with her debut single \"Ocean Eyes\" which was released on SoundCloud and written and produced by her brother Finneas O'Connell. In 2017, she released her debut EP, Don't Smile at Me, which was commercially successful in various countries, including the US, UK, and Australia.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/BillieEilishO2140725-39_-_54665577407_%28cropped%29.jpg/330px-BillieEilishO2140725-39_-_54665577407_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Billie_Eilish"
+  },
+  {
+    "full_name": "Dua Lipa",
+    "doj_query": "Dua Lipa",
+    "wikipedia_slug": "Dua_Lipa",
+    "epstein_mentions": 4,
+    "description": "Dua Lipa is an English singer and songwriter. Her accolades include seven Brit Awards and three Grammy Awards.",
+    "extract": "Dua Lipa is an English singer and songwriter. Her accolades include seven Brit Awards and three Grammy Awards.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Dua_Lipa-69798_%28cropped%29.jpg/330px-Dua_Lipa-69798_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dua_Lipa"
+  },
+  {
+    "full_name": "Snoop Dogg",
+    "doj_query": "Snoop Dogg",
+    "wikipedia_slug": "Snoop_Dogg",
+    "epstein_mentions": 30,
+    "description": "Calvin Cordozar Broadus Jr., known professionally as Snoop Dogg, is an American rapper, singer, record producer, songwriter, and actor. A key figure in West Coast hip-hop, he helped define G-funk and gangsta rap, and is often regarded as one of the greatest rappers of all time. Known for his signature drawled delivery and melodic flow, his lyrics frequently address social issues such as recreational drug use and gun violence.",
+    "extract": "Calvin Cordozar Broadus Jr., known professionally as Snoop Dogg, is an American rapper, singer, record producer, songwriter, and actor. A key figure in West Coast hip-hop, he helped define G-funk and gangsta rap, and is often regarded as one of the greatest rappers of all time. Known for his signature drawled delivery and melodic flow, his lyrics frequently address social issues such as recreational drug use and gun violence.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Snoop_Dogg_2023_%2853775197331%29_%28cropped%29_%28cropped%29.jpg/330px-Snoop_Dogg_2023_%2853775197331%29_%28cropped%29_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Snoop_Dogg"
+  },
+  {
+    "full_name": "Justin Timberlake",
+    "doj_query": "Justin Timberlake",
+    "wikipedia_slug": "Justin_Timberlake",
+    "epstein_mentions": 27,
+    "description": "Justin Randall Timberlake is an American singer, songwriter, actor, record producer, and dancer. Dubbed the \"Prince of Pop\", he is one of the best-selling music artists of all time. Billboard named him one of the greatest pop stars of the 21st century. His awards include ten Grammy Awards, four Primetime Emmy Awards, three Brit Awards, nine Billboard Music Awards, the Contemporary Icon Award by the Songwriters Hall of Fame, and MTV's Michael Jackson Video Vanguard Award.",
+    "extract": "Justin Randall Timberlake is an American singer, songwriter, actor, record producer, and dancer. Dubbed the \"Prince of Pop\", he is one of the best-selling music artists of all time. Billboard named him one of the greatest pop stars of the 21st century. His awards include ten Grammy Awards, four Primetime Emmy Awards, three Brit Awards, nine Billboard Music Awards, the Contemporary Icon Award by the Songwriters Hall of Fame, and MTV's Michael Jackson Video Vanguard Award.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Justin_Timberlake_by_Gage_Skidmore_2.jpg/330px-Justin_Timberlake_by_Gage_Skidmore_2.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Justin_Timberlake"
+  },
+  {
+    "full_name": "Eminem",
+    "doj_query": "Eminem",
+    "wikipedia_slug": "Eminem",
+    "epstein_mentions": 19,
+    "description": "Marshall Bruce Mathers III, known professionally as Eminem, is an American rapper, songwriter, record producer and record executive. Widely regarded as one of the greatest and most influential rappers of all time, he is often credited with popularizing hip-hop in Middle America and breaking down racial barriers for the acceptance of white rappers in the genre.",
+    "extract": "Marshall Bruce Mathers III, known professionally as Eminem, is an American rapper, songwriter, record producer and record executive. Widely regarded as one of the greatest and most influential rappers of all time, he is often credited with popularizing hip-hop in Middle America and breaking down racial barriers for the acceptance of white rappers in the genre. While much of his transgressive work during the late 1990s and early 2000s made him a controversial figure, Eminem has become a representation of popular angst of lower income America and is noted for his conscious lyrics—which include political criticism and social commentary—and rap flow.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Eminem_2021_Color_Corrected.jpg/330px-Eminem_2021_Color_Corrected.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eminem"
+  },
+  {
+    "full_name": "Michael Jackson",
+    "doj_query": "Michael Jackson",
+    "wikipedia_slug": "Michael_Jackson",
+    "epstein_mentions": 207,
+    "description": "Michael Joseph Jackson was an American singer, songwriter, dancer, and philanthropist. Dubbed the \"King of Pop\", he is widely regarded as one of the most culturally significant figures of the 20th century. Over a four-decade career, his musical achievements broke American racial barriers and made him a dominant figure worldwide.",
+    "extract": "Michael Joseph Jackson was an American singer, songwriter, dancer, and philanthropist. Dubbed the \"King of Pop\", he is widely regarded as one of the most culturally significant figures of the 20th century. Over a four-decade career, his musical achievements broke American racial barriers and made him a dominant figure worldwide. Through his songs, concerts, and fashion, he proliferated visual performance for artists in popular music, popularizing street dance moves such as the moonwalk, the robot, and the anti-gravity lean. Jackson is often deemed the greatest entertainer of all time.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Michael_Jackson_1983_%283x4_cropped%29_%28contrast%29.jpg/330px-Michael_Jackson_1983_%283x4_cropped%29_%28contrast%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_Jackson"
+  },
+  {
+    "full_name": "Adele",
+    "doj_query": "Adele",
+    "wikipedia_slug": "Adele",
+    "epstein_mentions": 84,
+    "description": "Adele Laurie Blue Adkins is an English singer, songwriter, and actress. Regarded as a British cultural icon, she is known for her mezzo-soprano vocals and sentimental songwriting. Her accolades include 16 Grammy Awards, 12 Brit Awards, an Academy Award, a Primetime Emmy Award, and a Golden Globe Award.",
+    "extract": "Adele Laurie Blue Adkins is an English singer, songwriter, and actress. Regarded as a British cultural icon, she is known for her mezzo-soprano vocals and sentimental songwriting. Her accolades include 16 Grammy Awards, 12 Brit Awards, an Academy Award, a Primetime Emmy Award, and a Golden Globe Award.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Adele_2016.jpg/330px-Adele_2016.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Adele"
+  },
+  {
+    "full_name": "Bruno Mars",
+    "doj_query": "Bruno Mars",
+    "wikipedia_slug": "Bruno_Mars",
+    "epstein_mentions": 18,
+    "description": "Peter Gene Hernandez, known professionally as Bruno Mars, is an American singer-songwriter, record producer and dancer. Regarded as a pop icon, he is known for his three-octave tenor vocal range, live performances, retro showmanship, and musical versatility. He is accompanied by his band, the Hooligans. Raised in Honolulu, Mars gained recognition in Hawaii as a child for his impersonation of Elvis Presley, before moving to Los Angeles in 2003 to pursue a musical career.",
+    "extract": "Peter Gene Hernandez, known professionally as Bruno Mars, is an American singer-songwriter, record producer and dancer. Regarded as a pop icon, he is known for his three-octave tenor vocal range, live performances, retro showmanship, and musical versatility. He is accompanied by his band, the Hooligans. Raised in Honolulu, Mars gained recognition in Hawaii as a child for his impersonation of Elvis Presley, before moving to Los Angeles in 2003 to pursue a musical career.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/BrunoMars24KMagicWorldTourLive_%28cropped%29.jpg/330px-BrunoMars24KMagicWorldTourLive_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bruno_Mars"
+  },
+  {
+    "full_name": "Jason Derulo",
+    "doj_query": "Jason Derulo",
+    "wikipedia_slug": "Jason_Derulo",
+    "epstein_mentions": 6,
+    "description": "Jason Joel Desrouleaux, known professionally as Jason Derulo, is an American singer, songwriter and dancer. Since the start of his solo recording career in 2009, he has sold over 250 million singles worldwide and has achieved fourteen platinum singles in the US.",
+    "extract": "Jason Joel Desrouleaux, known professionally as Jason Derulo, is an American singer, songwriter and dancer. Since the start of his solo recording career in 2009, he has sold over 250 million singles worldwide and has achieved fourteen platinum singles in the US.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Jason_Derulo_in_2022_%28cropped%29.jpg/330px-Jason_Derulo_in_2022_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jason_Derulo"
+  },
+  {
+    "full_name": "Will Smith",
+    "doj_query": "Will Smith",
+    "wikipedia_slug": "Will_Smith_(actor)",
+    "epstein_mentions": 11,
+    "description": "Willard Carroll Smith II is an American actor, rapper, and film producer. Known for his work in both the screen and music industries, his accolades include an Academy Award, a Golden Globe Award, a BAFTA Award, and four Grammy Awards. Films in which he has appeared have grossed over $10 billion worldwide, making him one of Hollywood's most bankable stars.",
+    "extract": "Willard Carroll Smith II is an American actor, rapper, and film producer. Known for his work in both the screen and music industries, his accolades include an Academy Award, a Golden Globe Award, a BAFTA Award, and four Grammy Awards. Films in which he has appeared have grossed over $10 billion worldwide, making him one of Hollywood's most bankable stars.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/TechCrunch_Disrupt_San_Francisco_2019_-_Day_1_%2848834070763%29_%28cropped%29.jpg/330px-TechCrunch_Disrupt_San_Francisco_2019_-_Day_1_%2848834070763%29_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Will_Smith"
+  },
+  {
+    "full_name": "Kim Kardashian",
+    "doj_query": "Kim Kardashian",
+    "wikipedia_slug": "Kim_Kardashian",
+    "epstein_mentions": 34,
+    "description": "Kimberly Noel Kardashian is an American media personality, socialite, and businesswoman. She first gained media attention in 2007 following the unauthorized release of a sex tape with American singer Ray J. Afterwards, she and her family began to appear on the E! reality television series Keeping Up with the Kardashians. The show aired until 2021, and its success led to the formation of several spin-offs and a successor show, Hulu's The Kardashians (2022–present).",
+    "extract": "Kimberly Noel Kardashian is an American media personality, socialite, and businesswoman. She first gained media attention in 2007 following the unauthorized release of a sex tape with American singer Ray J. Afterwards, she and her family began to appear on the E! reality television series Keeping Up with the Kardashians. The show aired until 2021, and its success led to the formation of several spin-offs and a successor show, Hulu's The Kardashians (2022–present).",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Kim_Kardashian_West_2014.jpg/330px-Kim_Kardashian_West_2014.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kim_Kardashian"
+  },
+  {
+    "full_name": "Kylie Jenner",
+    "doj_query": "Kylie Jenner",
+    "wikipedia_slug": "Kylie_Jenner",
+    "epstein_mentions": 12,
+    "description": "Kylie Kristen Jenner is an American media personality, socialite and businesswoman. She starred in the E! reality television series Keeping Up with the Kardashians from 2007 to 2021 and then the Hulu reality television series The Kardashians from 2022. She is the founder and owner of cosmetic company Kylie Cosmetics. She is currently the fifth-most-followed person on Instagram.",
+    "extract": "Kylie Kristen Jenner is an American media personality, socialite and businesswoman. She starred in the E! reality television series Keeping Up with the Kardashians from 2007 to 2021 and then the Hulu reality television series The Kardashians from 2022. She is the founder and owner of cosmetic company Kylie Cosmetics. She is currently the fifth-most-followed person on Instagram.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kylie_Jenner1_%28cropped%29.png/330px-Kylie_Jenner1_%28cropped%29.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kylie_Jenner"
+  },
+  {
+    "full_name": "Khloe Kardashian",
+    "doj_query": "Khloe Kardashian",
+    "wikipedia_slug": "Khloe_Kardashian",
+    "epstein_mentions": 11,
+    "description": "Khloé Alexandra Kardashian is an American media personality, socialite, and businesswoman. She rose to fame starring with her family in the reality television series Keeping Up with the Kardashians from 2007 to 2021. Its success led to the creation of spin-offs, including Kourtney and Khloé Take Miami (2009–2013) and Kourtney and Khloé Take The Hamptons (2014–2015). Following the ending of their previous show, she and her family began starring on Hulu's The Kardashians in 2022.",
+    "extract": "Khloé Alexandra Kardashian is an American media personality, socialite, and businesswoman. She rose to fame starring with her family in the reality television series Keeping Up with the Kardashians from 2007 to 2021. Its success led to the creation of spin-offs, including Kourtney and Khloé Take Miami (2009–2013) and Kourtney and Khloé Take The Hamptons (2014–2015). Following the ending of their previous show, she and her family began starring on Hulu's The Kardashians in 2022.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Khloe_Kardashian_Glamour_2.png/330px-Khloe_Kardashian_Glamour_2.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Khlo%C3%A9_Kardashian"
+  },
+  {
+    "full_name": "Kendall Jenner",
+    "doj_query": "Kendall Jenner",
+    "wikipedia_slug": "Kendall_Jenner",
+    "epstein_mentions": 22,
+    "description": "Kendall Nicole Jenner is an American model, socialite and media personality. She rose to fame in the reality television show Keeping Up with the Kardashians, in which she starred for 20 seasons and nearly 15 years from 2007 to 2021. The success of the show led to the creation of multiple spin-off series including Kourtney and Khloe Take Miami (2009), Kourtney and Kim Take New York (2011), Khloé & Lamar (2011), Rob & Chyna (2016) and Life of Kylie (2017).",
+    "extract": "Kendall Nicole Jenner is an American model, socialite and media personality. She rose to fame in the reality television show Keeping Up with the Kardashians, in which she starred for 20 seasons and nearly 15 years from 2007 to 2021. The success of the show led to the creation of multiple spin-off series including Kourtney and Khloe Take Miami (2009), Kourtney and Kim Take New York (2011), Khloé & Lamar (2011), Rob & Chyna (2016) and Life of Kylie (2017). Following the decision to end their reality show, in 2022 she and her family starred in the reality television series The Kardashians on Hulu.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Kendall_Jenner_for_Adanola_2_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kendall_Jenner"
+  },
+  {
+    "full_name": "Charli D'Amelio",
+    "doj_query": "Charli D'Amelio",
+    "wikipedia_slug": "Charli_D%27Amelio",
+    "epstein_mentions": 0,
+    "description": "",
+    "extract": "",
+    "image_url": "",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charli_D%27Amelio"
+  },
+  {
+    "full_name": "Addison Rae",
+    "doj_query": "Addison Rae",
+    "wikipedia_slug": "Addison_Rae",
+    "epstein_mentions": 0,
+    "description": "Addison Rae Easterling is an American singer, actress, and social media personality. She joined TikTok in 2019, becoming one of the platform's most-followed creators. Rae went on to expand her career into music and acting. She appeared in films including He's All That (2021) and Thanksgiving (2023).",
+    "extract": "Addison Rae Easterling is an American singer, actress, and social media personality. She joined TikTok in 2019, becoming one of the platform's most-followed creators. Rae went on to expand her career into music and acting. She appeared in films including He's All That (2021) and Thanksgiving (2023).",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/LanaWembley030725-144_-_54640470921_%28Addison_Rae%29.jpg/330px-LanaWembley030725-144_-_54640470921_%28Addison_Rae%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Addison_Rae"
+  },
+  {
+    "full_name": "Bella Poarch",
+    "doj_query": "Bella Poarch",
+    "wikipedia_slug": "Bella_Poarch",
+    "epstein_mentions": 0,
+    "description": "Denarie Bautista Taylor\n(born Belinda Marie Macadengdeng Batumbakal; February 9, 1997), known professionally as Bella Poarch, is an American social media personality and singer. She rose to fame after creating the most liked video on TikTok in August 2020, in which she lip syncs to Millie B's song \"M to the B\". She is the fourth most-followed individual on the platform and the most followed person from the Philippines.",
+    "extract": "Denarie Bautista Taylor\n(born Belinda Marie Macadengdeng Batumbakal; February 9, 1997), known professionally as Bella Poarch, is an American social media personality and singer. She rose to fame after creating the most liked video on TikTok in August 2020, in which she lip syncs to Millie B's song \"M to the B\". She is the fourth most-followed individual on the platform and the most followed person from the Philippines.",
+    "image_url": "",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bella_Poarch"
+  },
+  {
+    "full_name": "Khaby Lame",
+    "doj_query": "Khaby Lame",
+    "wikipedia_slug": "Khaby_Lame",
+    "epstein_mentions": 0,
+    "description": "Khabane Serigne \"Khaby\" Lame is a Senegalese and Italian influencer. He is known for his TikTok videos, in which he silently mocks overly complicated \"life hack\" and other situational videos. As of 2026, he is the most-followed user on TikTok. In 2022, he was listed in Fortune's 40 Under 40 and Forbes' 30 Under 30. He also served as a juror on the 2023 edition of the television show Italia's Got Talent.",
+    "extract": "Khabane Serigne \"Khaby\" Lame is a Senegalese and Italian influencer. He is known for his TikTok videos, in which he silently mocks overly complicated \"life hack\" and other situational videos. As of 2026, he is the most-followed user on TikTok. In 2022, he was listed in Fortune's 40 Under 40 and Forbes' 30 Under 30. He also served as a juror on the 2023 edition of the television show Italia's Got Talent.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Khaby_Lame%2C_Nov_2025_%28cropped1%29.jpg/330px-Khaby_Lame%2C_Nov_2025_%28cropped1%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Khaby_Lame"
+  },
+  {
+    "full_name": "JoJo Siwa",
+    "doj_query": "JoJo Siwa",
+    "wikipedia_slug": "JoJo_Siwa",
+    "epstein_mentions": 0,
+    "description": "Joelle Joanie \"JoJo\" Siwa is an American singer, dancer, actress, and media personality. From 2015 to 2016, she appeared as a dancer on two seasons of the reality television show Dance Moms alongside her mother, Jessalynn Siwa. She was included on Time's annual list of the 100 most influential people in the world in 2020.",
+    "extract": "Joelle Joanie \"JoJo\" Siwa is an American singer, dancer, actress, and media personality. From 2015 to 2016, she appeared as a dancer on two seasons of the reality television show Dance Moms alongside her mother, Jessalynn Siwa. She was included on Time's annual list of the 100 most influential people in the world in 2020.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Jojo_Siwa_on_the_iHeart_Awards_2024_01.jpg/330px-Jojo_Siwa_on_the_iHeart_Awards_2024_01.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/JoJo_Siwa"
+  },
+  {
+    "full_name": "Dwayne Johnson",
+    "doj_query": "Dwayne Johnson",
+    "wikipedia_slug": "Dwayne_Johnson",
+    "epstein_mentions": 2,
+    "description": "Dwayne Douglas Johnson, also known by his ring name \"the Rock\", is an American actor and professional wrestler. He is signed to WWE, where he performs on a part-time basis. Widely regarded as one of the greatest professional wrestlers of all time, Johnson was integral to the development and success of the World Wrestling Federation during the Attitude Era. He wrestled for the WWF full-time for eight years before pursuing an acting career.",
+    "extract": "Dwayne Douglas Johnson, also known by his ring name \"the Rock\", is an American actor and professional wrestler. He is signed to WWE, where he performs on a part-time basis. Widely regarded as one of the greatest professional wrestlers of all time, Johnson was integral to the development and success of the World Wrestling Federation during the Attitude Era. He wrestled for the WWF full-time for eight years before pursuing an acting career. His films have grossed over $11.4 billion worldwide, making him one of the world's highest-grossing actors of all time. He is a co-owner of the United Football League, a member of the board of directors of TKO Group Holdings—the parent company of UFC and WWE—and co-founder of Seven Bucks Productions.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Dwayne_Johnson-1809_%28cropped%29.jpg/330px-Dwayne_Johnson-1809_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dwayne_Johnson"
+  },
+  {
+    "full_name": "Kevin Hart",
+    "doj_query": "Kevin Hart",
+    "wikipedia_slug": "Kevin_Hart_(actor)",
+    "epstein_mentions": 7,
+    "description": "Kevin Darnell Hart is an American comedian and actor. After winning several stand-up comedy competitions, Hart had his first breakthrough when Judd Apatow cast him in a recurring role on the TV series Undeclared (2001). Hart's comedic reputation continued to grow with the release of his first stand-up album I'm a Grown Little Man (2009). He has since released four more comedy albums: Seriously Funny (2010), Laugh at My Pain (2011), Let Me Explain (2013), and What Now? (2016).",
+    "extract": "Kevin Darnell Hart is an American comedian and actor. After winning several stand-up comedy competitions, Hart had his first breakthrough when Judd Apatow cast him in a recurring role on the TV series Undeclared (2001). Hart's comedic reputation continued to grow with the release of his first stand-up album I'm a Grown Little Man (2009). He has since released four more comedy albums: Seriously Funny (2010), Laugh at My Pain (2011), Let Me Explain (2013), and What Now? (2016).",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kevin_Hart_2014_%28cropped_2%29.jpg/330px-Kevin_Hart_2014_%28cropped_2%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kevin_Hart"
+  },
+  {
+    "full_name": "Vin Diesel",
+    "doj_query": "Vin Diesel",
+    "wikipedia_slug": "Vin_Diesel",
+    "epstein_mentions": 4,
+    "description": "Mark Sinclair Vincent, known professionally as Vin Diesel, is an American actor and filmmaker. One of the world's highest-grossing actors, he is best known for portraying Dominic \"Dom\" Toretto in the Fast & Furious franchise.",
+    "extract": "Mark Sinclair Vincent, known professionally as Vin Diesel, is an American actor and filmmaker. One of the world's highest-grossing actors, he is best known for portraying Dominic \"Dom\" Toretto in the Fast & Furious franchise.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Vin_Diesel_by_Gage_Skidmore_2.jpg/330px-Vin_Diesel_by_Gage_Skidmore_2.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vin_Diesel"
+  },
+  {
+    "full_name": "Gal Gadot",
+    "doj_query": "Gal Gadot",
+    "wikipedia_slug": "Gal_Gadot",
+    "epstein_mentions": 1,
+    "description": "Gal Gadot is an Israeli actress. She gained recognition for portraying Wonder Woman in the DC Extended Universe films (2016–2023). In 2018, Gadot was named one of Time's 100 most influential people and ranked by Forbes as the tenth-highest-paid actress, later rising to third in 2020. She became the first Israeli actor to receive a star on the Hollywood Walk of Fame in 2025.",
+    "extract": "Gal Gadot is an Israeli actress. She gained recognition for portraying Wonder Woman in the DC Extended Universe films (2016–2023). In 2018, Gadot was named one of Time's 100 most influential people and ranked by Forbes as the tenth-highest-paid actress, later rising to third in 2020. She became the first Israeli actor to receive a star on the Hollywood Walk of Fame in 2025.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Gal_Gadot_by_Gage_Skidmore_3.jpg/330px-Gal_Gadot_by_Gage_Skidmore_3.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gal_Gadot"
+  },
+  {
+    "full_name": "Zendaya",
+    "doj_query": "Zendaya",
+    "wikipedia_slug": "Zendaya",
+    "epstein_mentions": 3,
+    "description": "Zendaya Maree Stoermer Coleman is an American actress and singer. She is the recipient of numerous accolades, including two Primetime Emmy Awards and a Golden Globe Award, and was named by Time as one of the 100 most influential people in the world in 2022. Her films as a leading actress have grossed over $3.9 billion worldwide.",
+    "extract": "Zendaya Maree Stoermer Coleman is an American actress and singer. She is the recipient of numerous accolades, including two Primetime Emmy Awards and a Golden Globe Award, and was named by Time as one of the 100 most influential people in the world in 2022. Her films as a leading actress have grossed over $3.9 billion worldwide.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Zendaya_-_2019_by_Glenn_Francis.jpg/330px-Zendaya_-_2019_by_Glenn_Francis.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Zendaya"
+  },
+  {
+    "full_name": "Jennifer Lopez",
+    "doj_query": "Jennifer Lopez",
+    "wikipedia_slug": "Jennifer_Lopez",
+    "epstein_mentions": 49,
+    "description": "Jennifer Lynn Lopez is an American singer, songwriter, actress, dancer and businesswoman. Lopez is regarded as one of the most influential entertainers of her time, credited with breaking barriers for Latino Americans in Hollywood and helping propel the Latin pop movement in music. She is also known for her cultural impact through fashion, branding, and shifting mainstream beauty standards.",
+    "extract": "Jennifer Lynn Lopez is an American singer, songwriter, actress, dancer and businesswoman. Lopez is regarded as one of the most influential entertainers of her time, credited with breaking barriers for Latino Americans in Hollywood and helping propel the Latin pop movement in music. She is also known for her cultural impact through fashion, branding, and shifting mainstream beauty standards.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Jennifer_Lopez_at_the_2025_Sundance_Film_Festival_%28cropped_3%29.jpg/330px-Jennifer_Lopez_at_the_2025_Sundance_Film_Festival_%28cropped_3%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jennifer_Lopez"
+  },
+  {
+    "full_name": "Jackie Chan",
+    "doj_query": "Jackie Chan",
+    "wikipedia_slug": "Jackie_Chan",
+    "epstein_mentions": 6,
+    "description": "Fang Shilong, known professionally as Jackie Chan and Sing Lung, is a Hong Kong martial artist, actor and filmmaker, known for his slapstick, acrobatic fighting style, comic timing, and innovative stunts, which he typically performs himself. With a film career spanning more than sixty years, he is regarded as one of the most iconic and influential martial artists in the history of cinema. Films in which he has appeared have grossed over $6 billion worldwide.",
+    "extract": "Fang Shilong, known professionally as Jackie Chan and Sing Lung, is a Hong Kong martial artist, actor and filmmaker, known for his slapstick, acrobatic fighting style, comic timing, and innovative stunts, which he typically performs himself. With a film career spanning more than sixty years, he is regarded as one of the most iconic and influential martial artists in the history of cinema. Films in which he has appeared have grossed over $6 billion worldwide.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Jackie_Chan.jpg/330px-Jackie_Chan.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jackie_Chan"
+  },
+  {
+    "full_name": "Jason Statham",
+    "doj_query": "Jason Statham",
+    "wikipedia_slug": "Jason_Statham",
+    "epstein_mentions": 11,
+    "description": "Jason Statham is an English actor. He is known for being typecast as tough, gritty, or violent characters in various action thriller films, and has been credited for leading the resurgence of action films during the 2000s and 2010s. By 2017, his films had grossed over £1.1 billion, making him one of the industry's most bankable stars. Films in which he has appeared have grossed over $8.5 billion worldwide.",
+    "extract": "Jason Statham is an English actor. He is known for being typecast as tough, gritty, or violent characters in various action thriller films, and has been credited for leading the resurgence of action films during the 2000s and 2010s. By 2017, his films had grossed over £1.1 billion, making him one of the industry's most bankable stars. Films in which he has appeared have grossed over $8.5 billion worldwide.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Jason_Statham_2018.jpg/330px-Jason_Statham_2018.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jason_Statham"
+  },
+  {
+    "full_name": "LeBron James",
+    "doj_query": "LeBron James",
+    "wikipedia_slug": "LeBron_James",
+    "epstein_mentions": 13,
+    "description": "LeBron Raymone James is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). Nicknamed \"King James\", he is the NBA's all-time leading scorer and has won four NBA championships from 10 NBA Finals appearances, including eight consecutive appearances between 2011 and 2018. He has also won three Olympic gold medals as a member of the U.S. national team. James is widely considered to be one of the greatest basketball players of all time.",
+    "extract": "LeBron Raymone James is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). Nicknamed \"King James\", he is the NBA's all-time leading scorer and has won four NBA championships from 10 NBA Finals appearances, including eight consecutive appearances between 2011 and 2018. He has also won three Olympic gold medals as a member of the U.S. national team. James is widely considered to be one of the greatest basketball players of all time.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg/330px-LeBron_James_%2851959977144%29_%28cropped2%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/LeBron_James"
+  },
+  {
+    "full_name": "Cristiano Ronaldo",
+    "doj_query": "Cristiano Ronaldo",
+    "wikipedia_slug": "Cristiano_Ronaldo",
+    "epstein_mentions": 7,
+    "description": "Cristiano Ronaldo dos Santos Aveiro, nicknamed CR7, is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al-Nassr and the Portugal national team. Widely regarded as one of the greatest players in history, he has won numerous individual accolades throughout his career, including five Ballon d'Ors, a record three UEFA Men's Player of the Year Awards, and four European Golden Shoes. He was also named the world's best player five times by FIFA.",
+    "extract": "Cristiano Ronaldo dos Santos Aveiro, nicknamed CR7, is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al-Nassr and the Portugal national team. Widely regarded as one of the greatest players in history, he has won numerous individual accolades throughout his career, including five Ballon d'Ors, a record three UEFA Men's Player of the Year Awards, and four European Golden Shoes. He was also named the world's best player five times by FIFA. He has won 34 trophies in his career, including five UEFA Champions Leagues and the UEFA European Championship. He holds the records for most goals (140) and assists (42) in the Champions League, goals (14) and assists (8) in the European Championship, and most international appearances (226) and international goals (143). He is the only player to have scored 100 goals with four different clubs. He has made over 1,300 professional career appearances, the most by an outfield player, and has scored over 960 official senior career goals for club and country, making him the top goalscorer of all time.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cristiano_Ronaldo_2275_%28cropped%29.jpg/330px-Cristiano_Ronaldo_2275_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+  },
+  {
+    "full_name": "Lionel Messi",
+    "doj_query": "Lionel Messi",
+    "wikipedia_slug": "Lionel_Messi",
+    "epstein_mentions": 2,
+    "description": "Lionel Andrés Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. Widely regarded as one of the greatest players in history, Messi has set numerous records for individual accolades won throughout his professional footballing career, including eight Ballon d'Ors, six European Golden Shoes, and eight times being named the world's best player by FIFA.",
+    "extract": "Lionel Andrés Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. Widely regarded as one of the greatest players in history, Messi has set numerous records for individual accolades won throughout his professional footballing career, including eight Ballon d'Ors, six European Golden Shoes, and eight times being named the world's best player by FIFA. In 2025, he was named the All Time Men's World Best Player by the IFFHS. He is the most decorated player in the history of professional football, having won 46 team trophies. Messi's records include most goals in a calendar year (91), most goals for a single club, most goals in La Liga (474), most assists in international football (61), most goal contributions in the FIFA World Cup (21), and most goal contributions in the Copa América (32). A prolific goalscorer and creative playmaker, Messi has scored over 890 senior career goals and provided over 400 assists for club and country—the most of any player—resulting in over 1,300 goal contributions, the highest total in the sport's history.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lionel_Messi_NE_Revolution_Inter_Miami_7.9.25-178.jpg/330px-Lionel_Messi_NE_Revolution_Inter_Miami_7.9.25-178.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lionel_Messi"
+  },
+  {
+    "full_name": "Neymar",
+    "doj_query": "Neymar",
+    "wikipedia_slug": "Neymar",
+    "epstein_mentions": 0,
+    "description": "Neymar da Silva Santos Júnior, simply known as Neymar Júnior or mononymously as Neymar, is a Brazilian professional footballer who plays as an attacking midfielder or a forward for Campeonato Brasileiro Série A club Santos, which he captains, and the Brazil national team. Known for his dribbling, technical ability, playmaking, and finishing, he is widely regarded as one of the greatest players of all time.",
+    "extract": "Neymar da Silva Santos Júnior, simply known as Neymar Júnior or mononymously as Neymar, is a Brazilian professional footballer who plays as an attacking midfielder or a forward for Campeonato Brasileiro Série A club Santos, which he captains, and the Brazil national team. Known for his dribbling, technical ability, playmaking, and finishing, he is widely regarded as one of the greatest players of all time. He is one of only five players to have scored 100 goals with three different clubs, both the all-time Brazilian top goalscorer (43) and assist provider (33) in the UEFA Champions League, ranks second for the all-time South American men's top goalscorers in international football (79), and was the all-time top assist provider in international football (59) for two years. He has scored over 400 senior career goals and registered over 250 assists for club and country.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg/330px-Neymar_Jr._with_Al_Hilal%2C_3_October_2023_-_03_%28cropped%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neymar"
+  },
+  {
+    "full_name": "David Beckham",
+    "doj_query": "David Beckham",
+    "wikipedia_slug": "David_Beckham",
+    "epstein_mentions": 15,
+    "description": "Sir David Robert Joseph Beckham is an English former professional footballer, the president and co-owner of Inter Miami CF and co-owner of Salford City. Primarily a right midfielder and known for his range of passing, crossing ability and set-piece taking, Beckham is considered one of the best players of his generation and one of the greatest set-piece specialists of all time.",
+    "extract": "Sir David Robert Joseph Beckham is an English former professional footballer, the president and co-owner of Inter Miami CF and co-owner of Salford City. Primarily a right midfielder and known for his range of passing, crossing ability and set-piece taking, Beckham is considered one of the best players of his generation and one of the greatest set-piece specialists of all time. He won 19 major trophies in his career, and is the only English player to win league titles in four different countries: England, France, Spain, and the United States.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/David_Beckham_UNICEF_%28cropped2%29.jpg/330px-David_Beckham_UNICEF_%28cropped2%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/David_Beckham"
+  },
+  {
+    "full_name": "Cardi B",
+    "doj_query": "Cardi B",
+    "wikipedia_slug": "Cardi_B",
+    "epstein_mentions": 1,
+    "description": "Belcalis Marlenis Almánzar, known professionally as Cardi B, is an American rapper. Born and raised in New York City, she is known for her energetic rap flow and outspoken lyrics. Since launching her music career in 2016 and releasing her two mixtapes, Cardi B has been cited for her part in helping elevate the relevance of female rappers in popular music.",
+    "extract": "Belcalis Marlenis Almánzar, known professionally as Cardi B, is an American rapper. Born and raised in New York City, she is known for her energetic rap flow and outspoken lyrics. Since launching her music career in 2016 and releasing her two mixtapes, Cardi B has been cited for her part in helping elevate the relevance of female rappers in popular music.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Cardi_B_March_2024.png/330px-Cardi_B_March_2024.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cardi_B"
+  },
+  {
+    "full_name": "Tony Robbins",
+    "doj_query": "Tony Robbins",
+    "wikipedia_slug": "Tony_Robbins",
+    "epstein_mentions": 78,
+    "description": "Anthony Jay Robbins is an American author, coach and motivational speaker. He is known for his seminars, and self-help books including the books Unlimited Power (1986) and Awaken the Giant Within (1991).",
+    "extract": "Anthony Jay Robbins is an American author, coach and motivational speaker. He is known for his seminars, and self-help books including the books Unlimited Power (1986) and Awaken the Giant Within (1991).",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Tony_Robbins.jpg/330px-Tony_Robbins.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tony_Robbins"
+  },
+  {
+    "full_name": "Gary Vaynerchuk",
+    "doj_query": "Gary Vaynerchuk",
+    "wikipedia_slug": "Gary_Vaynerchuk",
+    "epstein_mentions": 4,
+    "description": "Gary Vaynerchuk is an American businessman, author, speaker, and internet personality. He is a co-founder of the restaurant reservation software company, Resy, and Empathy Wines. First known as a wine critic who expanded his family's wine business, Vaynerchuk is now more known for his work in digital marketing and social media as the chairman of New York–based communications company VaynerX, and as CEO of VaynerX subsidiary VaynerMedia.",
+    "extract": "Gary Vaynerchuk is an American businessman, author, speaker, and internet personality. He is a co-founder of the restaurant reservation software company, Resy, and Empathy Wines. First known as a wine critic who expanded his family's wine business, Vaynerchuk is now more known for his work in digital marketing and social media as the chairman of New York–based communications company VaynerX, and as CEO of VaynerX subsidiary VaynerMedia.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Gary_Vaynerchuk_public_domain.jpg/330px-Gary_Vaynerchuk_public_domain.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gary_Vaynerchuk"
+  }
+]
