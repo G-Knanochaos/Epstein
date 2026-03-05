@@ -12,20 +12,34 @@ def landing(request):
     return render(request, 'game/landing.html')
 
 
-def _pick_fresh(exclude_ids):
-    """Return one Celebrity not in exclude_ids (falls back to full pool if needed)."""
-    pool = list(Celebrity.objects.exclude(id__in=exclude_ids).values_list('id', flat=True))
+def _pick_fresh(exclude_ids, anchor_mentions=None):
+    """Return one Celebrity not in exclude_ids, biased toward similar mention counts.
+
+    If anchor_mentions is given, candidates are weighted by 1/(1+|diff|) so
+    celebrities with similar counts are more likely to be selected.
+    Falls back to a purely random pick if the pool is empty after exclusions.
+    """
+    qs = Celebrity.objects.exclude(id__in=exclude_ids)
+    if anchor_mentions is not None:
+        qs = qs.exclude(epstein_mentions=anchor_mentions)
+    pool = list(qs.values_list('id', 'epstein_mentions'))
     if not pool:
-        pool = list(Celebrity.objects.values_list('id', flat=True))
-    return Celebrity.objects.get(pk=random.choice(pool))
+        pool = list(Celebrity.objects.exclude(id__in=exclude_ids).values_list('id', 'epstein_mentions'))
+    if not pool:
+        pool = list(Celebrity.objects.values_list('id', 'epstein_mentions'))
+    if anchor_mentions is None or len(pool) == 1:
+        return Celebrity.objects.get(pk=random.choice(pool)[0])
+    weights = [1.0 / (1 + abs(anchor_mentions - mentions)) for _, mentions in pool]
+    (pk,) = random.choices(pool, weights=weights, k=1)[0][:1]
+    return Celebrity.objects.get(pk=pk)
 
 
 def game(request):
     """Main game page — renders the first pair and resets session state."""
     all_pks = list(Celebrity.objects.values_list('id', flat=True))
-    chosen = random.sample(all_pks, 2)
-    a = Celebrity.objects.get(pk=chosen[0])
-    b = Celebrity.objects.get(pk=chosen[1])
+    a = Celebrity.objects.get(pk=random.choice(all_pks))
+    b = _pick_fresh([a.pk], anchor_mentions=a.epstein_mentions)
+    chosen = [a.pk, b.pk]
     request.session['seen_ids'] = chosen
     context = {
         'left': a,
@@ -78,7 +92,7 @@ def check_guess(request):
         new_left = right
         # Exclude all recently seen IDs plus the new left card
         exclude = set(seen + [new_left.pk])
-        new_right = _pick_fresh(exclude)
+        new_right = _pick_fresh(exclude, anchor_mentions=new_left.epstein_mentions)
         seen = (seen + [new_right.pk])[-MAX_SEEN:]
         request.session['seen_ids'] = seen
         request.session.modified = True

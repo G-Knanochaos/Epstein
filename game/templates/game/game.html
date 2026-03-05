@@ -36,7 +36,9 @@
       </div>
       <p class="card-bio hidden" id="descLeft">{{ left.description }}</p>
       <p class="card-label">has</p>
-      <p class="card-count" id="countLeft">{{ left.epstein_mentions }}</p>
+      <div class="count-row">
+        <p class="card-count" id="countLeft">{{ left.epstein_mentions }}</p>
+      </div>
       <p class="card-unit">Epstein document mentions</p>
     </div>
   </div>
@@ -197,7 +199,7 @@
     const el = document.createElement('div');
     el.className = 'card-content';
     el.innerHTML =
-      '<div class="name-row"><h2 class="card-name"></h2></div>' +
+      '<div class="name-row"><h2 class="card-name"></h2><button class="info-btn" aria-label="Show info">ⓘ</button></div>' +
       '<p class="card-label">has</p>' +
       '<div class="count-row"><div class="btn-group">' +
       '<button class="btn btn-higher">▲ Higher</button>' +
@@ -250,6 +252,8 @@
     document.getElementById('btnGroup').classList.remove('hidden');
     bgLeft.style.backgroundImage  = `url('${data.new_left.image_url}')`;
     bgRight.style.backgroundImage = `url('${data.new_right.image_url}')`;
+    preloadBg(bgLeft,  data.new_left.image_url);
+    preloadBg(bgRight, data.new_right.image_url);
     leftId  = data.new_left.id;
     rightId = data.new_right.id;
 
@@ -260,6 +264,17 @@
       setTimeout(() => { strip.remove(); busy = false; }, 220);
     }, 520);
   }
+
+  function preloadBg(el, url) {
+    if (!url) return;
+    const img = new Image();
+    img.onerror = () => { el.style.backgroundImage = 'none'; };
+    img.src = url;
+  }
+
+  // Preload initial card images
+  preloadBg(document.getElementById('bgLeft'),  '{{ left.image_url }}');
+  preloadBg(document.getElementById('bgRight'), '{{ right.image_url }}');
 
   function toggleBio(id, btn) {
     const el = document.getElementById(id);

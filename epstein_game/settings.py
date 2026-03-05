@@ -15,6 +15,12 @@ import importlib.util
 from pathlib import Path
 
 try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
+try:
     import dj_database_url
 except ImportError:
     dj_database_url = None
