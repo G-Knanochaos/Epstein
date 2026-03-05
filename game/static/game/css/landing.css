@@ -90,6 +90,30 @@ html, body {
   place-items: center;
 }
 
+.landing-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-footer a {
+  color: rgba(255, 255, 255, 0.86);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 2px;
+}
+
+.landing-footer a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 .folder-link {
   position: relative;
   width: min(40vw, 420px);
@@ -170,5 +194,13 @@ html, body {
 
   .p1, .p3, .p5 {
     opacity: 0.72;
+  }
+
+  .landing-footer {
+    bottom: 10px;
+  }
+
+  .landing-footer a {
+    font-size: 0.84rem;
   }
 }

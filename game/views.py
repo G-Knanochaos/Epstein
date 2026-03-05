@@ -1,6 +1,8 @@
 import random
+from pathlib import Path
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import JsonResponse, FileResponse, Http404
+from django.conf import settings
 from .models import Celebrity
 
 # How many recently-seen IDs to exclude when picking new cards
@@ -10,6 +12,34 @@ MAX_SEEN = 15
 def landing(request):
     """Landing page with file-icon start CTA."""
     return render(request, 'game/landing.html')
+
+
+def info(request):
+    return render(request, 'game/info.html')
+
+
+def privacy(request):
+    return render(request, 'game/privacy.html')
+
+
+def about(request):
+    return render(request, 'game/about.html')
+
+
+def contact(request):
+    return render(request, 'game/contact.html')
+
+
+def disclaimer(request):
+    return render(request, 'game/disclaimer.html')
+
+
+def service_worker(request):
+    """Serve sw.js from repository root at /sw.js."""
+    sw_path = Path(settings.BASE_DIR) / "sw.js"
+    if not sw_path.exists():
+        raise Http404("sw.js not found")
+    return FileResponse(sw_path.open("rb"), content_type="application/javascript")
 
 
 def _pick_fresh(exclude_ids, anchor_mentions=None):

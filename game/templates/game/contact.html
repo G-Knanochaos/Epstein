@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'game/css/info.css' %}" />
+</head>
+<body>
+  <main class="page-wrap">
+    <nav class="top-nav">
+      <a href="{% url 'landing' %}">Home</a>
+      <a href="{% url 'info' %}">Info</a>
+    </nav>
+    <section class="panel">
+      <h1>Contact</h1>
+      <p>Email: <a href="mailto:epsteinranks@gmail.com">epsteinranks@gmail.com</a></p>
+    </section>
+  </main>
+</body>
+</html>

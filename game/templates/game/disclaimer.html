@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disclaimer</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'game/css/info.css' %}" />
+</head>
+<body>
+  <main class="page-wrap">
+    <nav class="top-nav">
+      <a href="{% url 'landing' %}">Home</a>
+      <a href="{% url 'info' %}">Info</a>
+    </nav>
+    <section class="panel">
+      <h1>Disclaimer</h1>
+      <p>This website uses publicly released court documents as its data source.</p>
+      <p>
+        All numeric mention counts in this game are sourced from documents published at
+        <a href="https://www.justice.gov/epstein" target="_blank" rel="noopener noreferrer">https://www.justice.gov/epstein</a>.
+      </p>
+      <p>
+        Mentions of individuals in these documents do not imply involvement in wrongdoing
+        or criminal activity.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

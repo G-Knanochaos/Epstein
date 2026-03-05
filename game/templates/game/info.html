@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'game/css/info.css' %}" />
+</head>
+<body>
+  <main class="page-wrap">
+    <nav class="top-nav">
+      <a href="{% url 'landing' %}">Home</a>
+      <a href="{% url 'game' %}">Play</a>
+      <a href="{% url 'privacy' %}">Privacy</a>
+      <a href="{% url 'about' %}">About</a>
+      <a href="{% url 'contact' %}">Contact</a>
+      <a href="{% url 'disclaimer' %}">Disclaimer</a>
+    </nav>
+
+    <section class="panel">
+      <h1>Info, Policies & Contact</h1>
+      <p>Use the pages below for policy, context, and contact details.</p>
+      <div class="links">
+        <a href="{% url 'privacy' %}">Privacy Policy</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'disclaimer' %}">Disclaimer</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

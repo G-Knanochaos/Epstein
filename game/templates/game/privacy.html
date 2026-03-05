@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'game/css/info.css' %}" />
+</head>
+<body>
+  <main class="page-wrap">
+    <nav class="top-nav">
+      <a href="{% url 'landing' %}">Home</a>
+      <a href="{% url 'info' %}">Info</a>
+    </nav>
+    <section class="panel">
+      <h1>Privacy Policy</h1>
+      <p>This site uses cookies and similar technologies to support core gameplay features and analytics.</p>
+      <ul>
+        <li>Cookies may be used to store gameplay preferences and top score locally.</li>
+        <li>This website may display advertising from third-party ad networks.</li>
+        <li>Google AdSense or similar ad services may use cookies to serve personalized or contextual ads.</li>
+      </ul>
+      <h2>Third-Party Advertising</h2>
+      <p>Ad providers may collect limited device/browser data as described in their own privacy policies.</p>
+      <h2>Data Source</h2>
+      <p>
+        All numeric mention counts displayed by this website are derived from publicly released
+        documents hosted at
+        <a href="https://www.justice.gov/epstein" target="_blank" rel="noopener noreferrer">https://www.justice.gov/epstein</a>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
