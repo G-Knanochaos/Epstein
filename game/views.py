@@ -1,7 +1,7 @@
 import random
 from pathlib import Path
 from django.shortcuts import render
-from django.http import JsonResponse, FileResponse, Http404
+from django.http import JsonResponse, FileResponse, Http404, HttpResponse
 from django.conf import settings
 from .models import Celebrity
 
@@ -40,6 +40,14 @@ def service_worker(request):
     if not sw_path.exists():
         raise Http404("sw.js not found")
     return FileResponse(sw_path.open("rb"), content_type="application/javascript")
+
+
+def ads_txt(request):
+    """Serve AdSense ads.txt at /ads.txt."""
+    return HttpResponse(
+        "google.com, pub-8492821915903378, DIRECT, f08c47fec0942fa0\n",
+        content_type="text/plain; charset=utf-8",
+    )
 
 
 def _pick_fresh(exclude_ids, anchor_mentions=None):

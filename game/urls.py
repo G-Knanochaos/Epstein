@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('sw.js', views.service_worker, name='service_worker'),
+    path('ads.txt', views.ads_txt, name='ads_txt'),
     path('', views.landing, name='landing'),
     path('play/', views.game, name='game'),
     path('info/', views.info, name='info'),
