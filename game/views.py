@@ -29,15 +29,17 @@ def _pick_fresh(exclude_ids, anchor_mentions=None):
         pool = list(Celebrity.objects.values_list('id', 'epstein_mentions'))
     if anchor_mentions is None or len(pool) == 1:
         return Celebrity.objects.get(pk=random.choice(pool)[0])
-    weights = [1.0 / (1 + abs(anchor_mentions - mentions)) for _, mentions in pool]
+    weights = [mentions / (1 + abs(anchor_mentions - mentions)) for _, mentions in pool]
     (pk,) = random.choices(pool, weights=weights, k=1)[0][:1]
     return Celebrity.objects.get(pk=pk)
 
 
 def game(request):
     """Main game page — renders the first pair and resets session state."""
-    all_pks = list(Celebrity.objects.values_list('id', flat=True))
-    a = Celebrity.objects.get(pk=random.choice(all_pks))
+    all_pool = list(Celebrity.objects.values_list('id', 'epstein_mentions'))
+    pks, mentions = zip(*all_pool)
+    (a_pk,) = random.choices(pks, weights=mentions, k=1)
+    a = Celebrity.objects.get(pk=a_pk)
     b = _pick_fresh([a.pk], anchor_mentions=a.epstein_mentions)
     chosen = [a.pk, b.pk]
     request.session['seen_ids'] = chosen
