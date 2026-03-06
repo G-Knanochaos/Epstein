@@ -7,6 +7,12 @@ from .models import Celebrity
 
 # How many recently-seen IDs to exclude when picking new cards
 MAX_SEEN = 15
+# Difficulty tuning: compressed mention weights and distance bonus make rounds easier.
+INITIAL_MENTION_POWER = 0.5
+SECONDARY_MENTION_POWER = 0.3
+DISTANCE_BONUS_POWER = 0.6
+CLOSE_CALL_RATIO = 0.10
+CLOSE_CALL_MIN = 25
 
 
 def landing(request):
@@ -51,10 +57,10 @@ def ads_txt(request):
 
 
 def _pick_fresh(exclude_ids, anchor_mentions=None):
-    """Return one Celebrity not in exclude_ids, biased toward similar mention counts.
+    """Return one Celebrity not in exclude_ids, biased toward clearer comparisons.
 
-    If anchor_mentions is given, candidates are weighted by 1/(1+|diff|) so
-    celebrities with similar counts are more likely to be selected.
+    If anchor_mentions is given, candidates are weighted to prefer larger mention
+    gaps so higher/lower choices are less ambiguous for players.
     Falls back to a purely random pick if the pool is empty after exclusions.
     """
     qs = Celebrity.objects.exclude(id__in=exclude_ids)
@@ -67,7 +73,11 @@ def _pick_fresh(exclude_ids, anchor_mentions=None):
         pool = list(Celebrity.objects.values_list('id', 'epstein_mentions'))
     if anchor_mentions is None or len(pool) == 1:
         return Celebrity.objects.get(pk=random.choice(pool)[0])
-    weights = [mentions / (1 + abs(anchor_mentions - mentions)) for _, mentions in pool]
+    weights = [
+        ((mentions + 1) ** SECONDARY_MENTION_POWER)
+        * ((1 + abs(anchor_mentions - mentions)) ** DISTANCE_BONUS_POWER)
+        for _, mentions in pool
+    ]
     (pk,) = random.choices(pool, weights=weights, k=1)[0][:1]
     return Celebrity.objects.get(pk=pk)
 
@@ -76,7 +86,8 @@ def game(request):
     """Main game page — renders the first pair and resets session state."""
     all_pool = list(Celebrity.objects.values_list('id', 'epstein_mentions'))
     pks, mentions = zip(*all_pool)
-    (a_pk,) = random.choices(pks, weights=mentions, k=1)
+    initial_weights = [(m + 1) ** INITIAL_MENTION_POWER for m in mentions]
+    (a_pk,) = random.choices(pks, weights=initial_weights, k=1)
     a = Celebrity.objects.get(pk=a_pk)
     b = _pick_fresh([a.pk], anchor_mentions=a.epstein_mentions)
     chosen = [a.pk, b.pk]
@@ -121,8 +132,10 @@ def check_guess(request):
     else:
         correct = right.epstein_mentions <= left.epstein_mentions
 
-    # Equal counts always count as correct
-    if right.epstein_mentions == left.epstein_mentions:
+    # Close calls are forgiven to reduce frustration on near-ties.
+    diff = abs(right.epstein_mentions - left.epstein_mentions)
+    close_call_margin = max(CLOSE_CALL_MIN, int(max(left.epstein_mentions, right.epstein_mentions) * CLOSE_CALL_RATIO))
+    if diff <= close_call_margin:
         correct = True
 
     seen = request.session.get('seen_ids', [])
