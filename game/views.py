@@ -56,11 +56,11 @@ def ads_txt(request):
     )
 
 
-def _pick_fresh(exclude_ids, anchor_mentions=None):
-    """Return one Celebrity not in exclude_ids, biased toward clearer comparisons.
+def _pick_fresh(exclude_ids, anchor_mentions=None, score=0):
+    """Return one Celebrity not in exclude_ids.
 
-    If anchor_mentions is given, candidates are weighted to prefer larger mention
-    gaps so higher/lower choices are less ambiguous for players.
+    At low scores: biased toward larger mention gaps (easier comparisons).
+    At high scores: biased toward closer mention counts (harder comparisons).
     Falls back to a purely random pick if the pool is empty after exclusions.
     """
     qs = Celebrity.objects.exclude(id__in=exclude_ids)
@@ -73,9 +73,13 @@ def _pick_fresh(exclude_ids, anchor_mentions=None):
         pool = list(Celebrity.objects.values_list('id', 'epstein_mentions'))
     if anchor_mentions is None or len(pool) == 1:
         return Celebrity.objects.get(pk=random.choice(pool)[0])
+    # difficulty 0→1 as score climbs from 0→10 000
+    # distance_power positive  → prefer far (easy); negative → prefer close (hard)
+    difficulty = min(1.0, score / 10000)
+    distance_power = DISTANCE_BONUS_POWER * (1 - 2 * difficulty)
     weights = [
         ((mentions + 1) ** SECONDARY_MENTION_POWER)
-        * ((1 + abs(anchor_mentions - mentions)) ** DISTANCE_BONUS_POWER)
+        * ((1 + abs(anchor_mentions - mentions)) ** distance_power)
         for _, mentions in pool
     ]
     (pk,) = random.choices(pool, weights=weights, k=1)[0][:1]
@@ -132,11 +136,9 @@ def check_guess(request):
     else:
         correct = right.epstein_mentions <= left.epstein_mentions
 
-    # Close calls are forgiven to reduce frustration on near-ties.
     diff = abs(right.epstein_mentions - left.epstein_mentions)
     close_call_margin = max(CLOSE_CALL_MIN, int(max(left.epstein_mentions, right.epstein_mentions) * CLOSE_CALL_RATIO))
-    if diff <= close_call_margin:
-        correct = True
+    close_call = diff <= close_call_margin
 
     seen = request.session.get('seen_ids', [])
 
@@ -145,15 +147,20 @@ def check_guess(request):
         new_left = right
         # Exclude all recently seen IDs plus the new left card
         exclude = set(seen + [new_left.pk])
-        new_right = _pick_fresh(exclude, anchor_mentions=new_left.epstein_mentions)
+        new_right = _pick_fresh(exclude, anchor_mentions=new_left.epstein_mentions, score=score)
         seen = (seen + [new_right.pk])[-MAX_SEEN:]
         request.session['seen_ids'] = seen
         request.session.modified = True
         game_over = False
     else:
         game_over = True
-        new_left = left
-        new_right = right
+        # Old right becomes new left (same slide direction as correct guess)
+        new_left = right
+        exclude = set(seen + [new_left.pk])
+        new_right = _pick_fresh(exclude, anchor_mentions=new_left.epstein_mentions, score=score)
+        seen = (seen + [new_right.pk])[-MAX_SEEN:]
+        request.session['seen_ids'] = seen
+        request.session.modified = True
 
     def cel_dict(c):
         return {
@@ -166,6 +173,7 @@ def check_guess(request):
 
     return JsonResponse({
         'correct': correct,
+        'close_call': close_call,
         'right_mentions': right.epstein_mentions,
         'new_left': cel_dict(new_left),
         'new_right': cel_dict(new_right),
