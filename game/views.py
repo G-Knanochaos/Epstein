@@ -75,7 +75,7 @@ def _pick_fresh(exclude_ids, anchor_mentions=None, score=0):
         return Celebrity.objects.get(pk=random.choice(pool)[0])
     # difficulty 0→1 as score climbs from 0→10 000
     # distance_power positive  → prefer far (easy); negative → prefer close (hard)
-    difficulty = min(1.0, score / 10000)
+    difficulty = min(1.0, score / 100000)
     distance_power = DISTANCE_BONUS_POWER * (1 - 2 * difficulty)
     weights = [
         ((mentions + 1) ** SECONDARY_MENTION_POWER)
