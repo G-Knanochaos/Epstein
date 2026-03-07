@@ -11,8 +11,6 @@ MAX_SEEN = 15
 INITIAL_MENTION_POWER = 0.5
 SECONDARY_MENTION_POWER = 0.3
 DISTANCE_BONUS_POWER = 0.6
-CLOSE_CALL_RATIO = 0.10
-CLOSE_CALL_MIN = 25
 
 
 def landing(request):
@@ -132,10 +130,8 @@ def check_guess(request):
     else:
         correct = right.epstein_mentions <= left.epstein_mentions
 
-    # Close calls are forgiven to reduce frustration on near-ties.
-    diff = abs(right.epstein_mentions - left.epstein_mentions)
-    close_call_margin = max(CLOSE_CALL_MIN, int(max(left.epstein_mentions, right.epstein_mentions) * CLOSE_CALL_RATIO))
-    if diff <= close_call_margin:
+    # Equal counts always count as correct
+    if right.epstein_mentions == left.epstein_mentions:
         correct = True
 
     seen = request.session.get('seen_ids', [])
